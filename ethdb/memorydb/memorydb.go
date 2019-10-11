@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/ethdb"
 )
 
 var (

@@ -22,9 +22,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
-	"github.com/AERUMTechnology/go-aerum/p2p/netutil"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/netutil"
 )
 
 const (

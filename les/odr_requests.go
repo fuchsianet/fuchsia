@@ -21,15 +21,15 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core/rawdb"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
-	"github.com/AERUMTechnology/go-aerum/light"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/rlp"
-	"github.com/AERUMTechnology/go-aerum/trie"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/light"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fuchsianet/fuchsia/trie"
 )
 
 var (

@@ -19,10 +19,10 @@ package core
 import (
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/consensus"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/core/vm"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/consensus"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/core/vm"
 )
 
 // ChainContext supports retrieving headers and consensus parameters from the

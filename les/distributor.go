@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
+	"github.com/fuchsianet/fuchsia/common/mclock"
 )
 
 // requestDistributor implements a mechanism that distributes requests to

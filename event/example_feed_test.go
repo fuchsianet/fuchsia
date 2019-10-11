@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/event"
+	"github.com/fuchsianet/fuchsia/event"
 )
 
 func ExampleFeed_acknowledgedEvents() {

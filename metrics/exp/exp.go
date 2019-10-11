@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/AERUMTechnology/go-aerum/metrics"
-	"github.com/AERUMTechnology/go-aerum/metrics/prometheus"
+	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fuchsianet/fuchsia/metrics/prometheus"
 )
 
 type exp struct {

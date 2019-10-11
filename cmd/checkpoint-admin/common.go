@@ -19,15 +19,15 @@ package main
 import (
 	"strconv"
 
-	"github.com/AERUMTechnology/go-aerum/accounts"
-	"github.com/AERUMTechnology/go-aerum/accounts/abi/bind"
-	"github.com/AERUMTechnology/go-aerum/accounts/external"
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/contracts/checkpointoracle"
-	"github.com/AERUMTechnology/go-aerum/ethclient"
-	"github.com/AERUMTechnology/go-aerum/params"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/accounts"
+	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
+	"github.com/fuchsianet/fuchsia/accounts/external"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/contracts/checkpointoracle"
+	"github.com/fuchsianet/fuchsia/ethclient"
+	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fuchsianet/fuchsia/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

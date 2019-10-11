@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // handler handles JSON-RPC messages. There is one handler per connection. Note that

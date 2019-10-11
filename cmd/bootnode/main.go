@@ -24,14 +24,14 @@ import (
 	"net"
 	"os"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/p2p/discover"
-	"github.com/AERUMTechnology/go-aerum/p2p/discv5"
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
-	"github.com/AERUMTechnology/go-aerum/p2p/nat"
-	"github.com/AERUMTechnology/go-aerum/p2p/netutil"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p/discover"
+	"github.com/fuchsianet/fuchsia/p2p/discv5"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/nat"
+	"github.com/fuchsianet/fuchsia/p2p/netutil"
 )
 
 func main() {

@@ -24,7 +24,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 // RLPTest is the JSON structure of a single RLP test.

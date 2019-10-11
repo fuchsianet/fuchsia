@@ -19,10 +19,10 @@ package core
 import (
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // insertStats tracks and reports on block insertion.

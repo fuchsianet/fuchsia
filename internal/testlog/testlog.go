@@ -20,7 +20,7 @@ package testlog
 import (
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // Logger returns a logger which logs to the unit test log of t.

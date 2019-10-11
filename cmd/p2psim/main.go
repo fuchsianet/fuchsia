@@ -45,12 +45,12 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/p2p"
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
-	"github.com/AERUMTechnology/go-aerum/p2p/simulations"
-	"github.com/AERUMTechnology/go-aerum/p2p/simulations/adapters"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/simulations"
+	"github.com/fuchsianet/fuchsia/p2p/simulations/adapters"
+	"github.com/fuchsianet/fuchsia/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

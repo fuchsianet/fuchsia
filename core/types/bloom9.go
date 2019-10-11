@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fuchsianet/fuchsia/crypto"
 )
 
 type bytesBacked interface {

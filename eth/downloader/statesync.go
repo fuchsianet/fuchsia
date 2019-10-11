@@ -22,12 +22,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core/rawdb"
-	"github.com/AERUMTechnology/go-aerum/core/state"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/trie"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/trie"
 	"golang.org/x/crypto/sha3"
 )
 

@@ -27,14 +27,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/p2p"
-	"github.com/AERUMTechnology/go-aerum/p2p/discv5"
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fuchsianet/fuchsia/p2p/discv5"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 const (

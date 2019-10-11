@@ -21,7 +21,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 // Entry is implemented by known node record entry types.

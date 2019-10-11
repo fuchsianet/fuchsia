@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/bitutil"
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/common/bitutil"
+	"github.com/fuchsianet/fuchsia/crypto"
 )
 
 // bloomIndexes represents the bit indexes inside the bloom filter that belong

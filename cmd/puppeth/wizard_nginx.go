@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // ensureVirtualHost checks whether a reverse-proxy is running on the specified

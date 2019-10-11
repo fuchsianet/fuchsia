@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 	"golang.org/x/crypto/pbkdf2"
 )
 

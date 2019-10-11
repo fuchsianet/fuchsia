@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/bitutil"
-	"github.com/AERUMTechnology/go-aerum/light"
+	"github.com/fuchsianet/fuchsia/common/bitutil"
+	"github.com/fuchsianet/fuchsia/light"
 )
 
 const (

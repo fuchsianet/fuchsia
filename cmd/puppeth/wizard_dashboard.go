@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // deployDashboard queries the user for various input on deploying a web-service

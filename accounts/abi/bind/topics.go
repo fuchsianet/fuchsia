@@ -23,9 +23,9 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/abi"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/accounts/abi"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/crypto"
 )
 
 // makeTopics converts a filter query argument list into a filter topic set.

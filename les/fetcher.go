@@ -21,13 +21,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
-	"github.com/AERUMTechnology/go-aerum/consensus"
-	"github.com/AERUMTechnology/go-aerum/core/rawdb"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/light"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/consensus"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/light"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 const (

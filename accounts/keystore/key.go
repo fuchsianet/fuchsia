@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/accounts"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/accounts"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/crypto"
 	"github.com/pborman/uuid"
 )
 

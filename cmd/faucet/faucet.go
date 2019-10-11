@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/accounts"
-	"github.com/AERUMTechnology/go-aerum/accounts/keystore"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/eth"
-	"github.com/AERUMTechnology/go-aerum/eth/downloader"
-	"github.com/AERUMTechnology/go-aerum/ethclient"
-	"github.com/AERUMTechnology/go-aerum/ethstats"
-	"github.com/AERUMTechnology/go-aerum/les"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/node"
-	"github.com/AERUMTechnology/go-aerum/p2p"
-	"github.com/AERUMTechnology/go-aerum/p2p/discv5"
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
-	"github.com/AERUMTechnology/go-aerum/p2p/nat"
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/accounts"
+	"github.com/fuchsianet/fuchsia/accounts/keystore"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/eth"
+	"github.com/fuchsianet/fuchsia/eth/downloader"
+	"github.com/fuchsianet/fuchsia/ethclient"
+	"github.com/fuchsianet/fuchsia/ethstats"
+	"github.com/fuchsianet/fuchsia/les"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/node"
+	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fuchsianet/fuchsia/p2p/discv5"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/nat"
+	"github.com/fuchsianet/fuchsia/params"
 	"golang.org/x/net/websocket"
 )
 
@@ -220,7 +220,7 @@ type faucet struct {
 func newFaucet(genesis *core.Genesis, port int, enodes []*discv5.Node, network uint64, stats string, ks *keystore.KeyStore, index []byte) (*faucet, error) {
 	// Assemble the raw devp2p protocol stack
 	stack, err := node.New(&node.Config{
-		Name:    "aerum",
+		Name:    "fuchsia",
 		Version: params.VersionWithCommit(gitCommit, gitDate),
 		DataDir: filepath.Join(os.Getenv("HOME"), ".faucet"),
 		P2P: p2p.Config{

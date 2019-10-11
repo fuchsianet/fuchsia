@@ -26,7 +26,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/rlp"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/errors"
 	"github.com/syndtr/goleveldb/leveldb/iterator"

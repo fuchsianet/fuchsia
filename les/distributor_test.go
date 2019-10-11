@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
+	"github.com/fuchsianet/fuchsia/common/mclock"
 )
 
 type testDistReq struct {

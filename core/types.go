@@ -17,9 +17,9 @@
 package core
 
 import (
-	"github.com/AERUMTechnology/go-aerum/core/state"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/core/vm"
+	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It

@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
-	"github.com/AERUMTechnology/go-aerum/common/prque"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/common/prque"
 )
 
 // cmNodeFields are ClientNode fields used by the client manager

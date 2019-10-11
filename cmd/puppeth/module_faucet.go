@@ -26,8 +26,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // faucetDockerfile is the Dockerfile required to build a faucet container to

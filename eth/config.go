@@ -24,13 +24,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/consensus/ethash"
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/eth/downloader"
-	"github.com/AERUMTechnology/go-aerum/eth/gasprice"
-	"github.com/AERUMTechnology/go-aerum/miner"
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/consensus/ethash"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/eth/downloader"
+	"github.com/fuchsianet/fuchsia/eth/gasprice"
+	"github.com/fuchsianet/fuchsia/miner"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.
@@ -155,7 +155,7 @@ type Config struct {
 	// CheckpointOracle is the configuration for checkpoint oracle.
 	CheckpointOracle *params.CheckpointOracleConfig
 
-	// Added by Aerum
+	// Added by Fuchsia
 	// Ethereum IPC or RPC endpoint for Atmos synchronization
 	EthereumApiEndpoint string
 

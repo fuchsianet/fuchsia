@@ -23,9 +23,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/math"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
+	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
 )
 
 // node represents a host on the network.

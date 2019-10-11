@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
 )
 
 type MyType [5]byte

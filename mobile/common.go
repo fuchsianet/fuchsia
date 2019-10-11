@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
 )
 
 // Hash represents the 32 byte Keccak256 hash of arbitrary data.

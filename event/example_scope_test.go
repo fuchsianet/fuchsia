@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/AERUMTechnology/go-aerum/event"
+	"github.com/fuchsianet/fuchsia/event"
 )
 
 // This example demonstrates how SubscriptionScope can be used to control the lifetime of

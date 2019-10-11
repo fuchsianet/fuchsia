@@ -24,12 +24,12 @@ import (
 	"net"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/p2p/nat"
-	"github.com/AERUMTechnology/go-aerum/p2p/netutil"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p/nat"
+	"github.com/fuchsianet/fuchsia/p2p/netutil"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 const Version = 4

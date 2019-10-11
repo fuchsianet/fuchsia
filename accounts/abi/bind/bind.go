@@ -30,8 +30,8 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/abi"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/accounts/abi"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // Lang is a target programming language selector to generate bindings for.

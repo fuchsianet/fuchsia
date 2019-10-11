@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
 )
 
 // Simulation provides a framework for running actions in a simulated network

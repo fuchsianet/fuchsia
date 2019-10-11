@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

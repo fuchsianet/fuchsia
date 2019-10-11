@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
+	"github.com/fuchsianet/fuchsia/common/mclock"
 )
 
 // logger collects events in string format and discards events older than the

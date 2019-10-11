@@ -30,15 +30,15 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/AERUMTechnology/go-aerum/accounts"
-	"github.com/AERUMTechnology/go-aerum/accounts/abi"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
-	"github.com/AERUMTechnology/go-aerum/common/math"
-	"github.com/AERUMTechnology/go-aerum/consensus/clique"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/accounts"
+	"github.com/fuchsianet/fuchsia/accounts/abi"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fuchsianet/fuchsia/consensus/clique"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 type SigFormat struct {
@@ -263,7 +263,7 @@ func (api *SignerAPI) determineSignatureFormat(ctx context.Context, contentType 
 		// Clique uses V on the form 0 or 1
 		useEthereumV = false
 		req = &SignDataRequest{ContentType: mediaType, Rawdata: cliqueRlp, Messages: messages, Hash: sighash}
-	// Added by Aerum
+	// Added by Fuchsia
 	case ApplicationAtmos.Mime:
 		stringData, ok := data.(string)
 		if !ok {

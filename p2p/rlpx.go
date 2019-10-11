@@ -35,10 +35,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/bitutil"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/crypto/ecies"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common/bitutil"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/crypto/ecies"
+	"github.com/fuchsianet/fuchsia/rlp"
 	"github.com/golang/snappy"
 	"golang.org/x/crypto/sha3"
 )

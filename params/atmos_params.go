@@ -1,11 +1,11 @@
 package params
 
 import (
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 	"math/big"
 )
 
-// Values for AERUMS Genesis related to ATMOS Consensus
+// Values for Fuchsia Genesis related to ATMOS Consensus
 var (
 	atmosMinDelegateNo           = 3
 	atmosNetID                   = 538
@@ -59,7 +59,7 @@ func NewAtmosBlockRewards() *big.Int {
 	return atmosBlockRewards
 }
 
-func NewAerumPreAlloc() map[string]string {
-	aerumPreAlloc := map[string]string{}
-	return aerumPreAlloc
+func NewFuchsiaPreAlloc() map[string]string {
+	fuchsiaPreAlloc := map[string]string{}
+	return fuchsiaPreAlloc
 }

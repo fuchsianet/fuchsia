@@ -20,7 +20,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
 )
 
 var (

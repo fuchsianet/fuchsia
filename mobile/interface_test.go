@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 func TestInterfaceGetSet(t *testing.T) {

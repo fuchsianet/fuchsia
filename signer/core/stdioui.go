@@ -21,9 +21,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/AERUMTechnology/go-aerum/internal/ethapi"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/internal/ethapi"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/rpc"
 )
 
 type StdIOUI struct {

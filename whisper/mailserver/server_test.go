@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	whisper "github.com/AERUMTechnology/go-aerum/whisper/whisperv6"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/crypto"
+	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
 )
 
 const powRequirement = 0.00001

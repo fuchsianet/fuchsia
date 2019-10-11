@@ -28,9 +28,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/AERUMTechnology/go-aerum/internal/jsre"
-	"github.com/AERUMTechnology/go-aerum/internal/web3ext"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/internal/jsre"
+	"github.com/fuchsianet/fuchsia/internal/web3ext"
+	"github.com/fuchsianet/fuchsia/rpc"
 	"github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
 	"github.com/robertkrimen/otto"

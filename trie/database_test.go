@@ -19,8 +19,8 @@ package trie
 import (
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/ethdb/memorydb"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/ethdb/memorydb"
 )
 
 // Tests that the trie database returns a missing trie node error if attempting

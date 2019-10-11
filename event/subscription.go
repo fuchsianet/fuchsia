@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
+	"github.com/fuchsianet/fuchsia/common/mclock"
 )
 
 // Subscription represents a stream of events. The carrier of the events is typically a

@@ -27,9 +27,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
-	"github.com/AERUMTechnology/go-aerum/p2p/enr"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/enr"
+	"github.com/fuchsianet/fuchsia/rlp"
 	"gopkg.in/urfave/cli.v1"
 )
 

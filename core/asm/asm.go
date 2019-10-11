@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/core/vm"
+	"github.com/fuchsianet/fuchsia/core/vm"
 )
 
 // Iterator for disassembled EVM instructions

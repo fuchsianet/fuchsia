@@ -19,8 +19,8 @@
 package geth
 
 import (
-	"github.com/AERUMTechnology/go-aerum/whisper/shhclient"
-	whisper "github.com/AERUMTechnology/go-aerum/whisper/whisperv6"
+	"github.com/fuchsianet/fuchsia/whisper/shhclient"
+	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
 )
 
 // WhisperClient provides access to the Ethereum APIs.

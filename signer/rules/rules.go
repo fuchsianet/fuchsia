@@ -22,11 +22,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/internal/ethapi"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/signer/core"
-	"github.com/AERUMTechnology/go-aerum/signer/rules/deps"
-	"github.com/AERUMTechnology/go-aerum/signer/storage"
+	"github.com/fuchsianet/fuchsia/internal/ethapi"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/signer/core"
+	"github.com/fuchsianet/fuchsia/signer/rules/deps"
+	"github.com/fuchsianet/fuchsia/signer/storage"
 	"github.com/robertkrimen/otto"
 )
 

@@ -26,12 +26,12 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/dashboard"
-	"github.com/AERUMTechnology/go-aerum/eth"
-	"github.com/AERUMTechnology/go-aerum/node"
-	"github.com/AERUMTechnology/go-aerum/params"
-	whisper "github.com/AERUMTechnology/go-aerum/whisper/whisperv6"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/dashboard"
+	"github.com/fuchsianet/fuchsia/eth"
+	"github.com/fuchsianet/fuchsia/node"
+	"github.com/fuchsianet/fuchsia/params"
+	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
 	"github.com/naoina/toml"
 )
 
@@ -102,7 +102,7 @@ func defaultNodeConfig() node.Config {
 	cfg.Version = params.VersionWithCommit(gitCommit, gitDate)
 	cfg.HTTPModules = append(cfg.HTTPModules, "eth", "shh")
 	cfg.WSModules = append(cfg.WSModules, "eth", "shh")
-	cfg.IPCPath = "aerum.ipc"
+	cfg.IPCPath = "fuchsia.ipc"
 	return cfg
 }
 
@@ -135,7 +135,7 @@ func makeConfigNode(ctx *cli.Context) (*node.Node, gethConfig) {
 	utils.SetShhConfig(ctx, stack, &cfg.Shh)
 	utils.SetDashboardConfig(ctx, &cfg.Dashboard)
 
-	// Added by Aerum
+	// Added by Fuchsia
 	utils.SetAtmosConfig(ctx, &cfg.Eth)
 
 	return stack, cfg

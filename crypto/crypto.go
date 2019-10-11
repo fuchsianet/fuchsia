@@ -28,9 +28,9 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/math"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fuchsianet/fuchsia/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

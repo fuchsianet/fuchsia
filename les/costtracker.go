@@ -23,11 +23,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
-	"github.com/AERUMTechnology/go-aerum/eth"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
-	"github.com/AERUMTechnology/go-aerum/les/flowcontrol"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/eth"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/les/flowcontrol"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 const makeCostStats = false // make request cost statistics during operation

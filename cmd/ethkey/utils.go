@@ -22,9 +22,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/console"
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/console"
+	"github.com/fuchsianet/fuchsia/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

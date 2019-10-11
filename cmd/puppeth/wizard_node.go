@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/keystore"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/accounts/keystore"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // deployNode creates a new node configuration based on some user input.

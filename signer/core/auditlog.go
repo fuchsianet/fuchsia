@@ -19,10 +19,10 @@ package core
 import (
 	"context"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
-	"github.com/AERUMTechnology/go-aerum/internal/ethapi"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fuchsianet/fuchsia/internal/ethapi"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 type AuditLogger struct {

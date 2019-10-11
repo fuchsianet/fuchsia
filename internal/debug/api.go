@@ -34,7 +34,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // Handler is the global debugging handler.

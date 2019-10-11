@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
-	"github.com/AERUMTechnology/go-aerum/core/rawdb"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
 )
 
 func TestFreeClientPoolL10C100(t *testing.T) {

@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/common/math"
+	"github.com/fuchsianet/fuchsia/common/math"
 )
 
 // Memory implements a simple memory model for the ethereum virtual machine.

@@ -25,7 +25,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 const (

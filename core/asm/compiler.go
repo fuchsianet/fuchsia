@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/common/math"
-	"github.com/AERUMTechnology/go-aerum/core/vm"
+	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fuchsianet/fuchsia/core/vm"
 )
 
 // Compiler contains information about the parsed source

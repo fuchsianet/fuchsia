@@ -25,7 +25,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // ethstatsDockerfile is the Dockerfile required to build an ethstats backend

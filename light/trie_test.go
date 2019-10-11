@@ -23,13 +23,13 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/AERUMTechnology/go-aerum/consensus/ethash"
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/core/rawdb"
-	"github.com/AERUMTechnology/go-aerum/core/state"
-	"github.com/AERUMTechnology/go-aerum/core/vm"
-	"github.com/AERUMTechnology/go-aerum/params"
-	"github.com/AERUMTechnology/go-aerum/trie"
+	"github.com/fuchsianet/fuchsia/consensus/ethash"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fuchsianet/fuchsia/trie"
 )
 
 func TestNodeIterator(t *testing.T) {

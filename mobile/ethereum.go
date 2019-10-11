@@ -21,8 +21,8 @@ package geth
 import (
 	"errors"
 
-	ethereum "github.com/AERUMTechnology/go-aerum"
-	"github.com/AERUMTechnology/go-aerum/common"
+	ethereum "github.com/fuchsianet/fuchsia"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 // Subscription represents an event subscription where events are

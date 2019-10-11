@@ -19,8 +19,8 @@ package trie
 import (
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // SecureTrie wraps a trie with key hashing. In a secure trie, all

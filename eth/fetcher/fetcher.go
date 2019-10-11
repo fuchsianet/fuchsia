@@ -22,11 +22,11 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/prque"
-	"github.com/AERUMTechnology/go-aerum/consensus"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/prque"
+	"github.com/fuchsianet/fuchsia/consensus"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 const (

@@ -19,8 +19,8 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
-	"github.com/AERUMTechnology/go-aerum/p2p/enr"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/enr"
 )
 
 // Protocol represents a P2P subprotocol implementation.

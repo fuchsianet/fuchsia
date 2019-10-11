@@ -23,10 +23,10 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/abi/bind"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/contracts/checkpointoracle/contract"
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/contracts/checkpointoracle/contract"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // CheckpointOracle is a Go wrapper around an on-chain light client checkpoint oracle.

@@ -19,7 +19,7 @@ package core
 import (
 	"runtime"
 
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // senderCacher is a concurrent transaction sender recoverer and cacher.

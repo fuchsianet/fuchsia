@@ -17,9 +17,9 @@
 package runtime
 
 import (
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/core/vm"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

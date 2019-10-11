@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 // The ABI holds information about a contract's context and available

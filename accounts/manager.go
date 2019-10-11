@@ -21,7 +21,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/AERUMTechnology/go-aerum/event"
+	"github.com/fuchsianet/fuchsia/event"
 )
 
 // Config contains the settings of the global account manager.

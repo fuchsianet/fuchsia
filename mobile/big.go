@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 // A BigInt represents a signed multi-precision integer.

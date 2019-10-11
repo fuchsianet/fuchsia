@@ -22,29 +22,29 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/accounts"
-	"github.com/AERUMTechnology/go-aerum/accounts/abi/bind"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
-	"github.com/AERUMTechnology/go-aerum/common/mclock"
-	"github.com/AERUMTechnology/go-aerum/consensus"
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/core/bloombits"
-	"github.com/AERUMTechnology/go-aerum/core/rawdb"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/eth"
-	"github.com/AERUMTechnology/go-aerum/eth/downloader"
-	"github.com/AERUMTechnology/go-aerum/eth/filters"
-	"github.com/AERUMTechnology/go-aerum/eth/gasprice"
-	"github.com/AERUMTechnology/go-aerum/event"
-	"github.com/AERUMTechnology/go-aerum/internal/ethapi"
-	"github.com/AERUMTechnology/go-aerum/light"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/node"
-	"github.com/AERUMTechnology/go-aerum/p2p"
-	"github.com/AERUMTechnology/go-aerum/p2p/discv5"
-	"github.com/AERUMTechnology/go-aerum/params"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/accounts"
+	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/consensus"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/core/bloombits"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/eth"
+	"github.com/fuchsianet/fuchsia/eth/downloader"
+	"github.com/fuchsianet/fuchsia/eth/filters"
+	"github.com/fuchsianet/fuchsia/eth/gasprice"
+	"github.com/fuchsianet/fuchsia/event"
+	"github.com/fuchsianet/fuchsia/internal/ethapi"
+	"github.com/fuchsianet/fuchsia/light"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/node"
+	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fuchsianet/fuchsia/p2p/discv5"
+	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fuchsianet/fuchsia/rpc"
 )
 
 type LightEthereum struct {
@@ -88,8 +88,8 @@ func New(ctx *node.ServiceContext, config *eth.Config) (*LightEthereum, error) {
 	if _, isCompat := genesisErr.(*params.ConfigCompatError); genesisErr != nil && !isCompat {
 		return nil, genesisErr
 	}
-	// Added by Aerum
-	// Override AERUMTechnology API endpoint for Atmos consensus
+	// Added by Fuchsia
+	// Override Fuchsia API endpoint for Atmos consensus
 	if chainConfig.Atmos != nil {
 		if config.EthereumApiEndpoint != "" {
 			chainConfig.Atmos.EthereumApiEndpoint = config.EthereumApiEndpoint

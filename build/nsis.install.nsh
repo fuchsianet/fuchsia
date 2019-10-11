@@ -1,41 +1,41 @@
-Name "aerum ${MAJORVERSION}.${MINORVERSION}.${BUILDVERSION}" # VERSION variables set through command line arguments
+Name "fuchsia ${MAJORVERSION}.${MINORVERSION}.${BUILDVERSION}" # VERSION variables set through command line arguments
 InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://github.com/AERUMTechnology/go-aerum/issues"
-!define UPDATEURL "https://github.com/AERUMTechnology/go-aerum/releases"
-!define ABOUTURL "https://github.com/AERUMTechnology/go-aerum#ethereum-go"
+!define HELPURL "https://github.com/fuchsianet/fuchsia/issues"
+!define UPDATEURL "https://github.com/fuchsianet/fuchsia/releases"
+!define ABOUTURL "https://github.com/fuchsianet/fuchsia#ethereum-go"
 !define /date NOW "%Y%m%d"
 
 PageEx license
   LicenseData {{.License}}
 PageExEnd
 
-# Install aerum binary
+# Install fuchsia binary
 Section "Geth" GETH_IDX
   SetOutPath $INSTDIR
   file {{.Geth}}
 
   # Create start menu launcher
   createDirectory "$SMPROGRAMS\${APPNAME}"
-  createShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\aerum.exe" "--fast" "--cache=512"
-  createShortCut "$SMPROGRAMS\${APPNAME}\Attach.lnk" "$INSTDIR\aerum.exe" "attach" "" ""
+  createShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\fuchsia.exe" "--fast" "--cache=512"
+  createShortCut "$SMPROGRAMS\${APPNAME}\Attach.lnk" "$INSTDIR\fuchsia.exe" "attach" "" ""
   createShortCut "$SMPROGRAMS\${APPNAME}\Uninstall.lnk" "$INSTDIR\uninstall.exe" "" "" ""
 
   # Firewall - remove rules (if exists)
-  SimpleFC::AdvRemoveRule "Aerum incoming peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Aerum outgoing peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Aerum UDP discovery (UDP:30303)"
+  SimpleFC::AdvRemoveRule "Fuchsia incoming peers (TCP:30303)"
+  SimpleFC::AdvRemoveRule "Fuchsia outgoing peers (TCP:30303)"
+  SimpleFC::AdvRemoveRule "Fuchsia UDP discovery (UDP:30303)"
 
   # Firewall - add rules
-  SimpleFC::AdvAddRule "Aerum incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$INSTDIR\aerum.exe" "" "" "Ethereum" 30303 "" "" ""
-  SimpleFC::AdvAddRule "Aerum outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$INSTDIR\aerum.exe" "" "" "Ethereum" "" 30303 "" ""
-  SimpleFC::AdvAddRule "Aerum UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\aerum.exe" "" "" "Ethereum" "" 30303 "" ""
+  SimpleFC::AdvAddRule "Fuchsia incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$INSTDIR\fuchsia.exe" "" "" "Ethereum" 30303 "" "" ""
+  SimpleFC::AdvAddRule "Fuchsia outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$INSTDIR\fuchsia.exe" "" "" "Ethereum" "" 30303 "" ""
+  SimpleFC::AdvAddRule "Fuchsia UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\fuchsia.exe" "" "" "Ethereum" "" 30303 "" ""
 
   # Set default IPC endpoint (https://github.com/ethereum/EIPs/issues/147)
-  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\aerum.ipc"
-  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\aerum.ipc"
+  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\fuchsia.ipc"
+  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\fuchsia.ipc"
 
   # Add instdir to PATH
   Push "$INSTDIR"

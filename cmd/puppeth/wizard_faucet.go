@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/keystore"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/accounts/keystore"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // deployFaucet queries the user for various input on deploying a faucet, after

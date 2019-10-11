@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/AERUMTechnology/go-aerum/common/math"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/p2p/enr"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/p2p/enr"
+	"github.com/fuchsianet/fuchsia/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

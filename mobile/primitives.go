@@ -22,7 +22,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 // Strings represents s slice of strs.

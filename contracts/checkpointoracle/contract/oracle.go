@@ -7,12 +7,12 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "github.com/AERUMTechnology/go-aerum"
-	"github.com/AERUMTechnology/go-aerum/accounts/abi"
-	"github.com/AERUMTechnology/go-aerum/accounts/abi/bind"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/event"
+	ethereum "github.com/fuchsianet/fuchsia"
+	"github.com/fuchsianet/fuchsia/accounts/abi"
+	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

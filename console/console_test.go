@@ -26,13 +26,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/consensus/ethash"
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/eth"
-	"github.com/AERUMTechnology/go-aerum/internal/jsre"
-	"github.com/AERUMTechnology/go-aerum/miner"
-	"github.com/AERUMTechnology/go-aerum/node"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/consensus/ethash"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/eth"
+	"github.com/fuchsianet/fuchsia/internal/jsre"
+	"github.com/fuchsianet/fuchsia/miner"
+	"github.com/fuchsianet/fuchsia/node"
 )
 
 const (

@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/core/vm"
+	"github.com/fuchsianet/fuchsia/core/vm"
 )
 
 func TestVM(t *testing.T) {

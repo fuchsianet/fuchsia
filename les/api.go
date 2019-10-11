@@ -19,7 +19,7 @@ package les
 import (
 	"errors"
 
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
 )
 
 var (

@@ -30,7 +30,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 var (

@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // deployWallet creates a new web wallet based on some user input.

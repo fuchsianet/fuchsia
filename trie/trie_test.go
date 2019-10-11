@@ -29,12 +29,12 @@ import (
 	"testing/quick"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
-	"github.com/AERUMTechnology/go-aerum/ethdb/leveldb"
-	"github.com/AERUMTechnology/go-aerum/ethdb/memorydb"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/ethdb/leveldb"
+	"github.com/fuchsianet/fuchsia/ethdb/memorydb"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 func init() {

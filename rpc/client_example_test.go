@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/rpc"
 )
 
 // In this example, our client wishes to track the latest 'block number'

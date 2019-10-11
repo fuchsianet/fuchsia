@@ -7,10 +7,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/abi"
-	"github.com/AERUMTechnology/go-aerum/accounts/abi/bind"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/accounts/abi"
+	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // AtmosABI is the input ABI used to generate the binding from.

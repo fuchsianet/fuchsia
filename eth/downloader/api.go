@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	ethereum "github.com/AERUMTechnology/go-aerum"
-	"github.com/AERUMTechnology/go-aerum/event"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	ethereum "github.com/fuchsianet/fuchsia"
+	"github.com/fuchsianet/fuchsia/event"
+	"github.com/fuchsianet/fuchsia/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

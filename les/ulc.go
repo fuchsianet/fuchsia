@@ -19,8 +19,8 @@ package les
 import (
 	"errors"
 
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
 )
 
 type ulc struct {

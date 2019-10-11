@@ -24,8 +24,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
 )
 
 func TestUDPv4_Lookup(t *testing.T) {

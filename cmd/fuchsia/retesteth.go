@@ -26,26 +26,26 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
-	"github.com/AERUMTechnology/go-aerum/common/math"
-	"github.com/AERUMTechnology/go-aerum/consensus"
-	"github.com/AERUMTechnology/go-aerum/consensus/ethash"
-	"github.com/AERUMTechnology/go-aerum/consensus/misc"
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/core/rawdb"
-	"github.com/AERUMTechnology/go-aerum/core/state"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/core/vm"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/node"
-	"github.com/AERUMTechnology/go-aerum/params"
-	"github.com/AERUMTechnology/go-aerum/rlp"
-	"github.com/AERUMTechnology/go-aerum/rpc"
-	"github.com/AERUMTechnology/go-aerum/trie"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fuchsianet/fuchsia/consensus"
+	"github.com/fuchsianet/fuchsia/consensus/ethash"
+	"github.com/fuchsianet/fuchsia/consensus/misc"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/node"
+	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fuchsianet/fuchsia/trie"
 
 	cli "gopkg.in/urfave/cli.v1"
 )
@@ -59,11 +59,11 @@ var (
 	retestethCommand = cli.Command{
 		Action:      utils.MigrateFlags(retesteth),
 		Name:        "retesteth",
-		Usage:       "Launches aerum in retesteth mode",
+		Usage:       "Launches fuchsia in retesteth mode",
 		ArgsUsage:   "",
 		Flags:       []cli.Flag{rpcPortFlag},
 		Category:    "MISCELLANEOUS COMMANDS",
-		Description: `Launches aerum in retesteth mode (no database, no network, only retesteth RPC interface)`,
+		Description: `Launches fuchsia in retesteth mode (no database, no network, only retesteth RPC interface)`,
 	}
 )
 
@@ -812,7 +812,7 @@ func (api *RetestethAPI) StorageRangeAt(ctx context.Context,
 }
 
 func (api *RetestethAPI) ClientVersion(ctx context.Context) (string, error) {
-	return "Aerum-" + params.VersionWithCommit(gitCommit, gitDate), nil
+	return "Fuchsia-" + params.VersionWithCommit(gitCommit, gitDate), nil
 }
 
 // splitAndTrim splits input separated by a comma

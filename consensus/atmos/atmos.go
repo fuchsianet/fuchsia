@@ -1,18 +1,18 @@
-// Copyright 2017 The go-aerum Authors
-// This file is part of the go-aerum library.
+// Copyright 2017 The fuchsia Authors
+// This file is part of the fuchsia library.
 //
-// The go-aerum library is free software: you can redistribute it and/or modify
+// The fuchsia library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-aerum library is distributed in the hope that it will be useful,
+// The fuchsia library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-aerum library. If not, see <http://www.gnu.org/licenses/>.
+// along with the fuchsia library. If not, see <http://www.gnu.org/licenses/>.
 
 // Package atmos implements the proof-of-authority consensus engine.
 package atmos
@@ -28,21 +28,21 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/accounts"
-	"github.com/AERUMTechnology/go-aerum/accounts/abi/bind"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/consensus"
-	"github.com/AERUMTechnology/go-aerum/consensus/misc"
-	guvnor "github.com/AERUMTechnology/go-aerum/contracts/atmosGovernance"
-	"github.com/AERUMTechnology/go-aerum/core/state"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/ethclient"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/params"
-	"github.com/AERUMTechnology/go-aerum/rlp"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/accounts"
+	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/consensus"
+	"github.com/fuchsianet/fuchsia/consensus/misc"
+	guvnor "github.com/fuchsianet/fuchsia/contracts/atmosGovernance"
+	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/ethclient"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fuchsianet/fuchsia/rpc"
 	lru "github.com/hashicorp/golang-lru"
 	"golang.org/x/crypto/sha3"
 )
@@ -59,7 +59,7 @@ const (
 
 // Atmos proof-of-authority protocol constants.
 var (
-	// Added by Aerum
+	// Added by Fuchsia
 	BlockReward = params.NewAtmosBlockRewards() // Block reward in wei for successfully mining a block
 
 	epochLength = params.NewAtmosEpochInterval() // Default number of blocks after which to checkpoint and reset the pending votes
@@ -135,7 +135,7 @@ var (
 	// that already signed a header recently, thus is temporarily not allowed to.
 	errRecentlySigned = errors.New("recently signed")
 
-	// Added by Aerum
+	// Added by Fuchsia
 	// errInvalidNumberOfSigners is returned if number of signers is less than 2.
 	errInvalidNumberOfSigners = errors.New("invalid number of signers")
 )
@@ -366,7 +366,7 @@ func (a *Atmos) snapshot(chain consensus.ChainReader, number uint64, hash common
 				break
 			}
 		}
-		// Added by Aerum
+		// Added by Fuchsia
 		// If epoch block load snapshot from or governance contract
 		if number%a.config.Epoch == 0 {
 			if s, err := loadSnapshot(a.config, a.signatures, a.db, hash); err == nil {
@@ -419,7 +419,7 @@ func (a *Atmos) snapshot(chain consensus.ChainReader, number uint64, hash common
 	a.recents.Add(snap.Hash, snap)
 
 	// If we've generated a new checkpoint snapshot, save to disk
-	// Added by Aerum
+	// Added by Fuchsia
 	if snap.Number%a.config.Epoch == 0 && len(headers) > 0 {
 		if err = snap.store(a.db); err != nil {
 			return nil, err
@@ -469,7 +469,7 @@ func (a *Atmos) verifySeal(chain consensus.ChainReader, header *types.Header, pa
 		return errUnauthorizedSigner
 	}
 
-	// NOTE: To be removed by Aerum. Disable recents updates for now
+	// NOTE: To be removed by Fuchsia. Disable recents updates for now
 	for seen, recent := range snap.Recents {
 		if recent == signer {
 			// Signer is among recents, only fail if the current block doesn't shift it out
@@ -479,7 +479,7 @@ func (a *Atmos) verifySeal(chain consensus.ChainReader, header *types.Header, pa
 		}
 	}
 
-	//  NOTE: Added by Aerum. Disable recents updates for now
+	//  NOTE: Added by Fuchsia. Disable recents updates for now
 	//	for seen, recent := range snap.Recents {
 	//		if recent == signer {
 	//			// Signer is among recents, only fail if the current block doesn't shift it out
@@ -558,7 +558,7 @@ func (a *Atmos) Prepare(chain consensus.ChainReader, header *types.Header) error
 // Finalize implements consensus.Engine, ensuring no uncles are set, nor block
 // rewards given.
 func (a *Atmos) Finalize(chain consensus.ChainReader, header *types.Header, state *state.StateDB, txs []*types.Transaction, uncles []*types.Header) {
-	// Added by Aerum
+	// Added by Fuchsia
 	// Accumulate any block rewards and commit the final state root
 	accumulateRewards(a, state, header)
 
@@ -569,7 +569,7 @@ func (a *Atmos) Finalize(chain consensus.ChainReader, header *types.Header, stat
 // FinalizeAndAssemble implements consensus.Engine, ensuring no uncles are set,
 // nor block rewards given, and returns the final block.
 func (a *Atmos) FinalizeAndAssemble(chain consensus.ChainReader, header *types.Header, state *state.StateDB, txs []*types.Transaction, uncles []*types.Header, receipts []*types.Receipt) (*types.Block, error) {
-	// Added by Aerum
+	// Added by Fuchsia
 	// Accumulate any block rewards and commit the final state root
 	accumulateRewards(a, state, header)
 
@@ -619,7 +619,7 @@ func (a *Atmos) Seal(chain consensus.ChainReader, block *types.Block, results ch
 		return errUnauthorizedSigner
 	}
 
-	// NOTE: To be removed by Aerum. Disable recents updates for now
+	// NOTE: To be removed by Fuchsia. Disable recents updates for now
 	// If we're amongst the recent signers, wait for the next block
 	for seen, recent := range snap.Recents {
 		if recent == signer {
@@ -649,7 +649,7 @@ func (a *Atmos) Seal(chain consensus.ChainReader, block *types.Block, results ch
 	// Wait until sealing is terminated or delay timeout.
 	log.Trace("Waiting for slot to sign and propagate", "delay", common.PrettyDuration(delay))
 
-	//  NOTE: Added by Aerum. Disable recents updates for now
+	//  NOTE: Added by Fuchsia. Disable recents updates for now
 	//	for seen, recent := range snap.Recents {
 	//		if recent == signer {
 	//			// Signer is among recents, only wait if the current block doesn't shift it out
@@ -770,7 +770,7 @@ func encodeSigHeader(w io.Writer, header *types.Header) {
 	}
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func getComposers(chain consensus.ChainReader, config *params.AtmosConfig, number uint64, parents []*types.Header) ([]common.Address, error) {
 	ethereumApiEndpoint := getEthereumApiEndpoint(config)
 	client, err := ethclient.Dial(ethereumApiEndpoint)
@@ -813,7 +813,7 @@ func getComposers(chain consensus.ChainReader, config *params.AtmosConfig, numbe
 	return selectedAddresses, nil
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func signersProbabilisticSelection(addresses []common.Address, stakes []*big.Int, number uint64) []common.Address {
 	actualNumberOfSigners := int(math.Min(float64(len(addresses)), numberOfSigners))
 	log.Info("Selecting new signers", "actual number of signers", actualNumberOfSigners)
@@ -843,7 +843,7 @@ func signersProbabilisticSelection(addresses []common.Address, stakes []*big.Int
 	return selectedAddresses
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func selectRandomWeightedSigner(rand *rand.Rand, addresses []common.Address, weights []int64, totalWeight int64) (common.Address, int, error) {
 	randomWeight := rand.Int63n(totalWeight)
 	for index, address := range addresses {
@@ -855,17 +855,17 @@ func selectRandomWeightedSigner(rand *rand.Rand, addresses []common.Address, wei
 	return common.Address{}, 0, errors.New("no address selected")
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func removeAddressByIndex(slice []common.Address, index int) []common.Address {
 	return append(slice[:index], slice[index+1:]...)
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func removeInt64ByIndex(slice []int64, index int) []int64 {
 	return append(slice[:index], slice[index+1:]...)
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func getHeader(chain consensus.ChainReader, parents []*types.Header, number uint64) *types.Header {
 	// Check parents first
 	if len(parents) > 0 {
@@ -880,7 +880,7 @@ func getHeader(chain consensus.ChainReader, parents []*types.Header, number uint
 	return chain.GetHeaderByNumber(number)
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func accumulateRewards(a *Atmos, state *state.StateDB, header *types.Header) {
 	// Try to get block signer from the block header. Otherwise use atmos singer(on mining)
 	signer, err := ecrecover(header, a.signatures)
@@ -891,7 +891,7 @@ func accumulateRewards(a *Atmos, state *state.StateDB, header *types.Header) {
 	state.AddBalance(signer, BlockReward)
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func getParentHeader(chain consensus.ChainReader, header *types.Header, parents []*types.Header) *types.Header {
 	number := header.Number.Uint64()
 
@@ -908,7 +908,7 @@ func getParentHeader(chain consensus.ChainReader, header *types.Header, parents 
 	return parent
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func getEthereumApiEndpoint(config *params.AtmosConfig) string {
 	if config.EthereumApiEndpoint != "" {
 		return config.EthereumApiEndpoint
@@ -919,7 +919,7 @@ func getEthereumApiEndpoint(config *params.AtmosConfig) string {
 	return params.NewAtmosEthereumRPCProvider()
 }
 
-// Added by Aerum
+// Added by Fuchsia
 func getGovernanceAddress(config *params.AtmosConfig) common.Address {
 	if config.EthereumApiEndpoint != "" {
 		return config.GovernanceAddress

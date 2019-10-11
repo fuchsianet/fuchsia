@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/math"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/math"
 )
 
 // calcMemSize64 calculates the required memory size, and returns

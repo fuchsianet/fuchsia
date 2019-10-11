@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/rpc"
 )
 
 func TestUnmarshalJSONNewFilterArgs(t *testing.T) {

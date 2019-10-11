@@ -23,10 +23,10 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/metrics"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 var emptyCodeHash = crypto.Keccak256(nil)

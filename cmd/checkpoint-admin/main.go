@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/common/fdlimit"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/common/fdlimit"
+	"github.com/fuchsianet/fuchsia/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

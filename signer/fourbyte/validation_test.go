@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
-	"github.com/AERUMTechnology/go-aerum/signer/core"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fuchsianet/fuchsia/signer/core"
 )
 
 func mixAddr(a string) (*common.MixedcaseAddress, error) {

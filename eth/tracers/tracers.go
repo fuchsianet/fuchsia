@@ -21,7 +21,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/AERUMTechnology/go-aerum/eth/tracers/internal/tracers"
+	"github.com/fuchsianet/fuchsia/eth/tracers/internal/tracers"
 )
 
 // all contains all the built in JavaScript tracers by name.

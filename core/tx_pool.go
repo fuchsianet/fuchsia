@@ -25,14 +25,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/prque"
-	"github.com/AERUMTechnology/go-aerum/core/state"
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/event"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/metrics"
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/prque"
+	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/event"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 const (
@@ -137,7 +137,7 @@ type TxPoolConfig struct {
 	PriceBump  uint64 // Minimum price bump percentage to replace an already existing transaction (nonce)
 
 	AccountSlots uint64 // Number of executable transaction slots guaranteed per account
-	ReleaseLimit uint64 // Aerum Emergency pending pool release limit
+	ReleaseLimit uint64 // Fuchsia Emergency pending pool release limit
 	GlobalSlots  uint64 // Maximum number of executable transaction slots for all accounts
 	AccountQueue uint64 // Maximum number of non-executable transaction slots permitted per account
 	GlobalQueue  uint64 // Maximum number of non-executable transaction slots for all accounts
@@ -311,15 +311,15 @@ func (pool *TxPool) loop() {
 	var (
 		prevPending, prevQueued, prevStales int
 		// Start the stats reporting and transaction eviction tickers
-		report  = time.NewTicker(statsReportInterval)
-		aerumEvictor = time.NewTicker(3 * time.Second)
-		evict   = time.NewTicker(evictionInterval)
-		journal = time.NewTicker(pool.config.Rejournal)
+		report         = time.NewTicker(statsReportInterval)
+		fuchsiaEvictor = time.NewTicker(3 * time.Second)
+		evict          = time.NewTicker(evictionInterval)
+		journal        = time.NewTicker(pool.config.Rejournal)
 		// Track the previous head headers for transaction reorgs
 		head = pool.chain.CurrentBlock()
 	)
 	defer report.Stop()
-	defer aerumEvictor.Stop()
+	defer fuchsiaEvictor.Stop()
 	defer evict.Stop()
 	defer journal.Stop()
 
@@ -350,7 +350,7 @@ func (pool *TxPool) loop() {
 			}
 
 		// Handle inactive account transaction eviction
-		case <-aerumEvictor.C:
+		case <-fuchsiaEvictor.C:
 			pool.mu.Lock()
 
 			if uint64(pool.all.Count()) > pool.config.ReleaseLimit {

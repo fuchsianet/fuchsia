@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core/state"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core/state"
 )
 
 // txNoncer is a tiny virtual state database to manage the executable nonces of

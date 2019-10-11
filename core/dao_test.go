@@ -20,10 +20,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/consensus/ethash"
-	"github.com/AERUMTechnology/go-aerum/core/rawdb"
-	"github.com/AERUMTechnology/go-aerum/core/vm"
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/consensus/ethash"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 // Tests that DAO-fork enabled clients can properly filter out fork-commencing

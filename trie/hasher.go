@@ -20,8 +20,8 @@ import (
 	"hash"
 	"sync"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

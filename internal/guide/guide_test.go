@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/keystore"
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/accounts/keystore"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // Tests that the account management snippets work correctly.

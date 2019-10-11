@@ -1,6 +1,6 @@
 package discv5
 
-import "github.com/AERUMTechnology/go-aerum/metrics"
+import "github.com/fuchsianet/fuchsia/metrics"
 
 var (
 	ingressTrafficMeter = metrics.NewRegisteredMeter("discv5/InboundTraffic", nil)

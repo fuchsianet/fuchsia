@@ -21,10 +21,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/metrics"
+	"github.com/fuchsianet/fuchsia/metrics"
 
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/p2p"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p"
 )
 
 const (

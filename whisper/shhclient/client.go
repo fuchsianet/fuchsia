@@ -19,10 +19,10 @@ package shhclient
 import (
 	"context"
 
-	"github.com/AERUMTechnology/go-aerum"
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
-	"github.com/AERUMTechnology/go-aerum/rpc"
-	whisper "github.com/AERUMTechnology/go-aerum/whisper/whisperv6"
+	"github.com/fuchsianet/fuchsia"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fuchsianet/fuchsia/rpc"
+	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
 )
 
 // Client defines typed wrappers for the Whisper v6 RPC API.

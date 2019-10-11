@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // walletDockerfile is the Dockerfile required to run a web wallet.

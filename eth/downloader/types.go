@@ -19,7 +19,7 @@ package downloader
 import (
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // peerDropFn is a callback type for dropping a peer detected as malicious.

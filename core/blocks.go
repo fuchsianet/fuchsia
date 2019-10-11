@@ -16,7 +16,7 @@
 
 package core
 
-import "github.com/AERUMTechnology/go-aerum/common"
+import "github.com/fuchsianet/fuchsia/common"
 
 // BadHashes represent a set of manually tracked bad hashes (usually hard forks)
 var BadHashes = map[common.Hash]bool{

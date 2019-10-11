@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // dashboardContent is the actual dashboard HTML content to serve up when users

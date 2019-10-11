@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/common/prque"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/prque"
+	"github.com/fuchsianet/fuchsia/ethdb"
 )
 
 // ErrNotRequested is returned by the trie sync when it's requested to process a

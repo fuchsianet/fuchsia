@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // StateDB is an EVM database for full state querying.

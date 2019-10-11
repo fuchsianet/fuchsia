@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/metrics"
+	"github.com/fuchsianet/fuchsia/metrics"
 )
 
 func init() {

@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/p2p"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured
@@ -85,15 +85,15 @@ func TestIPCPathResolution(t *testing.T) {
 	}{
 		{"", "", false, ""},
 		{"data", "", false, ""},
-		{"", "aerum.ipc", false, filepath.Join(os.TempDir(), "aerum.ipc")},
-		{"data", "aerum.ipc", false, "data/aerum.ipc"},
-		{"data", "./aerum.ipc", false, "./aerum.ipc"},
-		{"data", "/aerum.ipc", false, "/aerum.ipc"},
+		{"", "fuchsia.ipc", false, filepath.Join(os.TempDir(), "fuchsia.ipc")},
+		{"data", "fuchsia.ipc", false, "data/fuchsia.ipc"},
+		{"data", "./fuchsia.ipc", false, "./fuchsia.ipc"},
+		{"data", "/fuchsia.ipc", false, "/fuchsia.ipc"},
 		{"", "", true, ``},
 		{"data", "", true, ``},
-		{"", "aerum.ipc", true, `\\.\pipe\aerum.ipc`},
-		{"data", "aerum.ipc", true, `\\.\pipe\aerum.ipc`},
-		{"data", `\\.\pipe\aerum.ipc`, true, `\\.\pipe\aerum.ipc`},
+		{"", "fuchsia.ipc", true, `\\.\pipe\fuchsia.ipc`},
+		{"data", "fuchsia.ipc", true, `\\.\pipe\fuchsia.ipc`},
+		{"data", `\\.\pipe\fuchsia.ipc`, true, `\\.\pipe\fuchsia.ipc`},
 	}
 	for i, test := range tests {
 		// Only run when platform/test match

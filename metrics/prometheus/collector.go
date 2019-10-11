@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/metrics"
+	"github.com/fuchsianet/fuchsia/metrics"
 )
 
 var (

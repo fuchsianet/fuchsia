@@ -21,8 +21,8 @@ package geth
 import (
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/core/types"
-	"github.com/AERUMTechnology/go-aerum/ethclient"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/ethclient"
 )
 
 // EthereumClient provides access to the Ethereum APIs.

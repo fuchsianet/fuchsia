@@ -21,8 +21,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/AERUMTechnology/go-aerum/internal/debug"
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/internal/debug"
+	"github.com/fuchsianet/fuchsia/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

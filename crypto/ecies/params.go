@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/AERUMTechnology/go-aerum/crypto"
+	ethcrypto "github.com/fuchsianet/fuchsia/crypto"
 )
 
 var (

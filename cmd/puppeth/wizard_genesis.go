@@ -28,13 +28,13 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/abi/bind"
-	"github.com/AERUMTechnology/go-aerum/common"
-	guvnor "github.com/AERUMTechnology/go-aerum/contracts/atmosGovernance"
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/ethclient"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
+	"github.com/fuchsianet/fuchsia/common"
+	guvnor "github.com/fuchsianet/fuchsia/contracts/atmosGovernance"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/ethclient"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 func getBootstrapDelegates() ([]common.Address, error) {
@@ -50,12 +50,12 @@ func getBootstrapDelegates() ([]common.Address, error) {
 	if err != nil {
 		fmt.Println(err)
 	}
-	addresses, err := caller.GetComposers(&bind.CallOpts{}, big.NewInt(0), big.NewInt(time.Now().Unix()))
+	addresses, _, err := caller.GetComposers(&bind.CallOpts{}, big.NewInt(0), big.NewInt(time.Now().Unix()))
 	if err != nil {
 		fmt.Println(err)
 	}
 	if len(addresses) < params.NewAtmosMinDelegateNo() {
-		log.Error("Failed to save genesis file", "err",  fmt.Sprintf("Not enough Delegates to continue. Only %d found - Contact the aerum team to report this issue.", len(addresses) ) )
+		log.Error("Failed to save genesis file", "err",  fmt.Sprintf("Not enough Delegates to continue. Only %d found - Contact the fuchsia team to report this issue.", len(addresses) ) )
 	}
 	if len(addresses) >= params.NewAtmosMinDelegateNo() {
 		log.Info(fmt.Sprintf("Fantastic! we found %d delegates. you may proceed in generating a genesis.", len(addresses)))
@@ -139,14 +139,14 @@ func (w *wizard) makeGenesis() {
 	}
 
 	fmt.Println("\n\n[aerDEV] ----------------------------------------------------------- [aerDEV]")
-	fmt.Println("[aerDEV] --- We have just preallocated some Aerum Coin to hard coded accounts --- [aerDEV]")
+	fmt.Println("[aerDEV] --- We have just preallocated some Fuchsia Coin to hard coded accounts --- [aerDEV]")
 	fmt.Println("[aerDEV] ----------------------------------------------------------- [aerDEV]\n\n")
 
-	for aerumTeamAddress, aerumTeamBalance := range params.NewAerumPreAlloc() {
-		bigaddr, _ := new(big.Int).SetString(aerumTeamAddress, 16)
+	for fuchsiaTeamAddress, fuchsiaTeamBalance := range params.NewFuchsiaPreAlloc() {
+		bigaddr, _ := new(big.Int).SetString(fuchsiaTeamAddress, 16)
 		address := common.BigToAddress(bigaddr)
 		bignum := new(big.Int)
-		bignum.SetString(aerumTeamBalance, 10)
+		bignum.SetString(fuchsiaTeamBalance, 10)
 		genesis.Alloc[address] = core.GenesisAccount{
 			Balance: bignum,
 		}

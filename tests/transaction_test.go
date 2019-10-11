@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 func TestTransaction(t *testing.T) {

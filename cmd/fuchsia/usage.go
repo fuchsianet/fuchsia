@@ -24,8 +24,8 @@ import (
 
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/internal/debug"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/internal/debug"
 	cli "gopkg.in/urfave/cli.v1"
 )
 
@@ -65,7 +65,7 @@ type flagGroup struct {
 // AppHelpFlagGroups is the application flags, grouped by functionality.
 var AppHelpFlagGroups = []flagGroup{
 	{
-		Name: "AERUMTechnology",
+		Name: "Fuchsia",
 		Flags: []cli.Flag{
 			configFileFlag,
 			utils.DataDirFlag,

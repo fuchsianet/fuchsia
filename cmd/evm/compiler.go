@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/evm/internal/compiler"
+	"github.com/fuchsianet/fuchsia/cmd/evm/internal/compiler"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

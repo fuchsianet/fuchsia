@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AERUMTechnology/go-aerum/node"
-	"github.com/AERUMTechnology/go-aerum/p2p"
-	"github.com/AERUMTechnology/go-aerum/rpc"
+	"github.com/fuchsianet/fuchsia/node"
+	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fuchsianet/fuchsia/rpc"
 )
 
 // SampleService is a trivial network service that can be attached to a node for

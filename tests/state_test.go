@@ -24,8 +24,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/core/vm"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/core/vm"
 )
 
 func TestState(t *testing.T) {

@@ -22,7 +22,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/core/asm"
+	"github.com/fuchsianet/fuchsia/core/asm"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

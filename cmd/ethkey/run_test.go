@@ -22,7 +22,7 @@ import (
 	"testing"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/AERUMTechnology/go-aerum/internal/cmdtest"
+	"github.com/fuchsianet/fuchsia/internal/cmdtest"
 )
 
 type testEthkey struct {

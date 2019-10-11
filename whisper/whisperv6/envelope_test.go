@@ -22,7 +22,7 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/crypto"
 )
 
 func TestPoWCalculationsWithNoLeadingZeros(t *testing.T) {

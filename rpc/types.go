@@ -22,7 +22,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
 )
 
 // API describes the set of methods offered over the RPC interface

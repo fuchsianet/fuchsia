@@ -23,8 +23,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/crypto"
-	"github.com/AERUMTechnology/go-aerum/p2p/enr"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/p2p/enr"
 )
 
 var parseNodeTests = []struct {

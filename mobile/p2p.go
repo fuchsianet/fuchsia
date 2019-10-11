@@ -21,7 +21,7 @@ package geth
 import (
 	"errors"
 
-	"github.com/AERUMTechnology/go-aerum/p2p"
+	"github.com/fuchsianet/fuchsia/p2p"
 )
 
 // NodeInfo represents pi short summary of the information known about the host.

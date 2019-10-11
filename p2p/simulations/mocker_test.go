@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
 )
 
 func TestMocker(t *testing.T) {

@@ -19,7 +19,7 @@ package vm
 import (
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/crypto"
 )
 
 func TestJumpDestAnalysis(t *testing.T) {

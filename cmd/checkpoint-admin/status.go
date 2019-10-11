@@ -19,8 +19,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/common"
 	"gopkg.in/urfave/cli.v1"
 )
 

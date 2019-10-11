@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 // from bcValidBlockTest.json, "SimpleTx"

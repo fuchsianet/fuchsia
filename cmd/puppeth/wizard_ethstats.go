@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // deployEthstats queries the user for various input on deploying an ethstats

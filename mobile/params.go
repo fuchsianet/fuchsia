@@ -21,9 +21,9 @@ package geth
 import (
 	"encoding/json"
 
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/p2p/discv5"
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/p2p/discv5"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It

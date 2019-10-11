@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // explorerDockerfile is the Dockerfile required to run a block explorer.

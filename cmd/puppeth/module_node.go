@@ -26,8 +26,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // nodeDockerfile is the Dockerfile required to run an Ethereum node.

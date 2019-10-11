@@ -26,8 +26,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/internal/jsre/deps"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/internal/jsre/deps"
 	"github.com/robertkrimen/otto"
 )
 

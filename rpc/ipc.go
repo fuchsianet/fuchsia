@@ -20,8 +20,8 @@ import (
 	"context"
 	"net"
 
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/p2p/netutil"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p/netutil"
 )
 
 // ServeListener accepts connections on l, serving JSON-RPC on them.

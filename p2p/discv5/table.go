@@ -29,7 +29,7 @@ import (
 	"net"
 	"sort"
 
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 const (

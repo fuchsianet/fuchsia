@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

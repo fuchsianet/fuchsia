@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // NewTxsEvent is posted when a batch of transactions enter the transaction pool.

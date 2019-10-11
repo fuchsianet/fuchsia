@@ -16,7 +16,7 @@
 
 package downloader
 
-import "github.com/AERUMTechnology/go-aerum/core/types"
+import "github.com/fuchsianet/fuchsia/core/types"
 
 type DoneEvent struct {
 	Latest *types.Header

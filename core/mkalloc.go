@@ -34,8 +34,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 type allocItem struct{ Addr, Balance *big.Int }

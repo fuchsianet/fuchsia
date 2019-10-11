@@ -29,24 +29,24 @@ import (
 	"time"
 
 	"github.com/elastic/gosigar"
-	"github.com/AERUMTechnology/go-aerum/accounts"
-	"github.com/AERUMTechnology/go-aerum/accounts/keystore"
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/console"
-	"github.com/AERUMTechnology/go-aerum/eth"
-	"github.com/AERUMTechnology/go-aerum/eth/downloader"
-	"github.com/AERUMTechnology/go-aerum/ethclient"
-	"github.com/AERUMTechnology/go-aerum/internal/debug"
-	"github.com/AERUMTechnology/go-aerum/les"
-	"github.com/AERUMTechnology/go-aerum/log"
-	"github.com/AERUMTechnology/go-aerum/metrics"
-	"github.com/AERUMTechnology/go-aerum/node"
+	"github.com/fuchsianet/fuchsia/accounts"
+	"github.com/fuchsianet/fuchsia/accounts/keystore"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/console"
+	"github.com/fuchsianet/fuchsia/eth"
+	"github.com/fuchsianet/fuchsia/eth/downloader"
+	"github.com/fuchsianet/fuchsia/ethclient"
+	"github.com/fuchsianet/fuchsia/internal/debug"
+	"github.com/fuchsianet/fuchsia/les"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fuchsianet/fuchsia/node"
 	cli "gopkg.in/urfave/cli.v1"
 )
 
 const (
-	clientIdentifier = "aerum" // Client identifier to advertise over the network
+	clientIdentifier = "fuchsia" // Client identifier to advertise over the network
 )
 
 var (
@@ -192,8 +192,8 @@ var (
 		utils.MetricsInfluxDBTagsFlag,
 	}
 
-	// Added by Aerum
-	aerumFlags = []cli.Flag{
+	// Added by Fuchsia
+	fuchsiaFlags = []cli.Flag{
 		utils.AtmosEthereumApiEndpointFlag,
 		utils.AtmosGovernance,
 		utils.AtmosTestNet,
@@ -202,7 +202,7 @@ var (
 
 func init() {
 	// Initialize the CLI app and start Geth
-	app.Action = aerum
+	app.Action = fuchsia
 	app.HideVersion = true // we have a command to print the version
 	app.Copyright = "Copyright 2013-2019 The go-ethereum Authors"
 	app.Commands = []cli.Command{
@@ -241,8 +241,8 @@ func init() {
 	app.Flags = append(app.Flags, debug.Flags...)
 	app.Flags = append(app.Flags, whisperFlags...)
 	app.Flags = append(app.Flags, metricsFlags...)
-	// Added by Aerum
-	app.Flags = append(app.Flags, aerumFlags...)
+	// Added by Fuchsia
+	app.Flags = append(app.Flags, fuchsiaFlags...)
 
 	app.Before = func(ctx *cli.Context) error {
 		logdir := ""
@@ -312,7 +312,7 @@ func main() {
 // geth is the main entry point into the system if no special subcommand is ran.
 // It creates a default node based on the command line arguments and runs it in
 // blocking mode, waiting for it to be shut down.
-func aerum(ctx *cli.Context) error {
+func fuchsia(ctx *cli.Context) error {
 	if args := ctx.Args(); len(args) > 0 {
 		return fmt.Errorf("invalid command: %q", args[0])
 	}
@@ -327,8 +327,8 @@ func aerum(ctx *cli.Context) error {
 // it unlocks any requested accounts, and starts the RPC/IPC interfaces and the
 // miner.
 func startNode(ctx *cli.Context, stack *node.Node) {
-	// Added by Aerum
-	log.Info("Starting Aerum version")
+	// Added by Fuchsia
+	log.Info("Starting Fuchsia version")
 
 	debug.Memsize.Add("node", stack)
 

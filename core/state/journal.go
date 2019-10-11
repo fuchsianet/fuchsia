@@ -19,7 +19,7 @@ package state
 import (
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 // journalEntry is a modification entry in the state change journal that can be

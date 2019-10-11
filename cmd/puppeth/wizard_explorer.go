@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // deployExplorer creates a new block explorer based on some user input.

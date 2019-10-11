@@ -19,7 +19,7 @@
 package downloader
 
 import (
-	"github.com/AERUMTechnology/go-aerum/metrics"
+	"github.com/fuchsianet/fuchsia/metrics"
 )
 
 var (

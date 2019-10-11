@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/abi"
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/accounts/abi"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 // Tests that all the selectors contained in the 4byte database are valid.

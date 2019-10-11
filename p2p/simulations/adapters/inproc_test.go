@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AERUMTechnology/go-aerum/p2p/simulations/pipes"
+	"github.com/fuchsianet/fuchsia/p2p/simulations/pipes"
 )
 
 func TestTCPPipe(t *testing.T) {

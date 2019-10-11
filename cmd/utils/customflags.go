@@ -27,7 +27,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/common/math"
+	"github.com/fuchsianet/fuchsia/common/math"
 	"gopkg.in/urfave/cli.v1"
 )
 

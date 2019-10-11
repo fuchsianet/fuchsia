@@ -54,7 +54,7 @@ func TestBloom(t *testing.T) {
 import (
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/core/state"
+	"github.com/fuchsianet/fuchsia/core/state"
 )
 
 func TestBloom9(t *testing.T) {

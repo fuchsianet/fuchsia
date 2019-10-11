@@ -22,7 +22,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 func init() {

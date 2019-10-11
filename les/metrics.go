@@ -17,8 +17,8 @@
 package les
 
 import (
-	"github.com/AERUMTechnology/go-aerum/metrics"
-	"github.com/AERUMTechnology/go-aerum/p2p"
+	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fuchsianet/fuchsia/p2p"
 )
 
 var (

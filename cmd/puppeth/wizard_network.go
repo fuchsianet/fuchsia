@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // manageServers displays a list of servers the user can disconnect from, and an

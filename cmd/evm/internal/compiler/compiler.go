@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/AERUMTechnology/go-aerum/core/asm"
+	"github.com/fuchsianet/fuchsia/core/asm"
 )
 
 func Compile(fn string, src []byte, debug bool) (string, error) {

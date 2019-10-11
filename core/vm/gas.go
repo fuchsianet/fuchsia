@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 // Gas costs

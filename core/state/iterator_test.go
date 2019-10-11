@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/ethdb"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/ethdb"
 )
 
 // Tests that the node iterator indeed walks over the entire database contents.

@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/AERUMTechnology/go-aerum/cmd/utils"
+	"github.com/fuchsianet/fuchsia/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

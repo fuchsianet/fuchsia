@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/AERUMTechnology/go-aerum/core"
-	"github.com/AERUMTechnology/go-aerum/log"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/log"
 	"github.com/olekukonko/tablewriter"
 )
 

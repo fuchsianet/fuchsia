@@ -19,7 +19,7 @@ package bloombits
 import (
 	"errors"
 
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 var (

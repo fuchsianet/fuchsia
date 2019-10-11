@@ -26,7 +26,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/rlp"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 var (

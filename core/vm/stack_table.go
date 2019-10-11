@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"github.com/AERUMTechnology/go-aerum/params"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 func minSwapStack(n int) int {

@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/core/types"
+	"github.com/fuchsianet/fuchsia/core/types"
 )
 
 // Tests that batched bloom bits are correctly rotated from the input bloom

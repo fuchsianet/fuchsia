@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/common/math"
+	"github.com/fuchsianet/fuchsia/common/math"
 )
 
 func TestBlockNumberJSONUnmarshal(t *testing.T) {

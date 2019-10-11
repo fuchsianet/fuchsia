@@ -23,8 +23,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/accounts/abi"
-	"github.com/AERUMTechnology/go-aerum/common"
+	"github.com/fuchsianet/fuchsia/accounts/abi"
+	"github.com/fuchsianet/fuchsia/common"
 )
 
 // decodedCallData is an internal type to represent a method call parsed according

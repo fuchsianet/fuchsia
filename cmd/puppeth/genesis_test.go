@@ -25,7 +25,7 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/AERUMTechnology/go-aerum/core"
+	"github.com/fuchsianet/fuchsia/core"
 )
 
 // Tests the go-ethereum to Aleth chainspec conversion for the Stureby testnet.

@@ -40,7 +40,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/crypto"
 )
 
 var dumpEnc bool

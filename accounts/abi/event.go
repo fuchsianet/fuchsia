@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/common"
-	"github.com/AERUMTechnology/go-aerum/crypto"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/crypto"
 )
 
 // Event is an event potentially triggered by the EVM's LOG mechanism. The Event

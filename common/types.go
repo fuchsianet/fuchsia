@@ -26,7 +26,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/AERUMTechnology/go-aerum/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
 	"golang.org/x/crypto/sha3"
 )
 
