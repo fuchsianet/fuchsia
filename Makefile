@@ -11,7 +11,7 @@
 GOBIN = $(shell pwd)/build/bin
 GO ?= latest
 
-fuchsia:
+fuchsia-go:
 	build/env.sh go run build/ci.go install ./cmd/fuchsia
 	@echo "Done building."
 	@echo "Run \"$(GOBIN)/fuchsia\" to launch fuchsia."

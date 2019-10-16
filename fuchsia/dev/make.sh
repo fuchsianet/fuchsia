@@ -1,2 +1,2 @@
 #!/bin/bash
-make --directory $PWD/../.. fuchsia
+make --directory $PWD/../.. fuchsia-go
