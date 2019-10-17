@@ -25,13 +25,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/event"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/enr"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 var (

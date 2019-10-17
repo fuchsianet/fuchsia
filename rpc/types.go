@@ -23,8 +23,8 @@ import (
 	"math"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
 )
 
 // API describes the set of methods offered over the RPC interface

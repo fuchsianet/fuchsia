@@ -25,11 +25,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/p2p/enr"
 	lru "github.com/hashicorp/golang-lru"
 )
 

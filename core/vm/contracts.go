@@ -22,12 +22,12 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/blake2b"
-	"github.com/ethereum/go-ethereum/crypto/bn256"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/crypto/blake2b"
+	"github.com/fuchsianet/fuchsia/crypto/bn256"
+	"github.com/fuchsianet/fuchsia/params"
 	"golang.org/x/crypto/ripemd160"
 )
 

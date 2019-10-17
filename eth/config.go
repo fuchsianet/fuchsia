@@ -24,13 +24,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/consensus/ethash"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/eth/downloader"
+	"github.com/fuchsianet/fuchsia/eth/gasprice"
+	"github.com/fuchsianet/fuchsia/miner"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.
@@ -157,4 +157,14 @@ type Config struct {
 
 	// Istanbul block override (TODO: remove after the fork)
 	OverrideIstanbul *big.Int
+
+	// Added by Fuchsia
+	// Ethereum IPC or RPC endpoint for Atmos synchronization
+	EthereumApiEndpoint string
+
+	// Atmos governance address
+	AtmosGovernance string
+
+	// Should Atmos testnet be used
+	EnableAtmostTestNet bool
 }

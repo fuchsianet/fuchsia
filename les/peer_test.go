@@ -21,15 +21,15 @@ import (
 	"net"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/les/flowcontrol"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/eth"
+	"github.com/fuchsianet/fuchsia/les/flowcontrol"
+	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 const protocolVersion = lpv2

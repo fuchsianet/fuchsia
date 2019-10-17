@@ -20,11 +20,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/light"
+	"github.com/fuchsianet/fuchsia/log"
 )
 
 // LesOdr implements light.OdrBackend

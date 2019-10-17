@@ -224,8 +224,8 @@ var (
 		PetersburgBlock:     big.NewInt(0),
 		IstanbulBlock:       big.NewInt(0),
 		Atmos: &AtmosConfig{
-			Period: 2,
-			Epoch:  1000,
+			Period: 3,
+			Epoch:  100,
 		},
 	}
 

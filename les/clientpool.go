@@ -22,12 +22,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/common/prque"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 const (

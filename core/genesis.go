@@ -25,17 +25,17 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fuchsianet/fuchsia/rlp"
 )
 
 //go:generate gencodec -type Genesis -field-override genesisSpecMarshaling -out gen_genesis.go

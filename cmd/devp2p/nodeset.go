@@ -23,8 +23,8 @@ import (
 	"io/ioutil"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
 )
 
 const jsonIndent = "    "

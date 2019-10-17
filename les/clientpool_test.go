@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
 )
 
 func TestClientPoolL10C100Free(t *testing.T) {

@@ -21,17 +21,17 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discv5"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fuchsianet/fuchsia/core"
+	"github.com/fuchsianet/fuchsia/core/rawdb"
+	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fuchsianet/fuchsia/eth"
+	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fuchsianet/fuchsia/light"
+	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fuchsianet/fuchsia/p2p/discv5"
+	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fuchsianet/fuchsia/params"
 )
 
 func errResp(code errCode, format string, v ...interface{}) error {
