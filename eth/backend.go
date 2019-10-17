@@ -140,6 +140,17 @@ func New(ctx *node.ServiceContext, config *Config) (*Ethereum, error) {
 	if _, ok := genesisErr.(*params.ConfigCompatError); genesisErr != nil && !ok {
 		return nil, genesisErr
 	}
+	// Added by Fuchsia
+	// Override Fuchsia API endpoint for Atmos consensus
+	if chainConfig.Atmos != nil {
+		if config.EthereumApiEndpoint != "" {
+			chainConfig.Atmos.EthereumApiEndpoint = config.EthereumApiEndpoint
+		}
+		if config.AtmosGovernance != "" {
+			chainConfig.Atmos.GovernanceAddress = common.HexToAddress(config.AtmosGovernance)
+		}
+		chainConfig.Atmos.EnableTestNet = config.EnableAtmostTestNet
+	}
 	log.Info("Initialised chain configuration", "config", chainConfig)
 
 	eth := &Ethereum{
