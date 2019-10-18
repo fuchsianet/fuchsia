@@ -21,11 +21,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/params"
 )
 
 func TestMemoryGasCost(t *testing.T) {

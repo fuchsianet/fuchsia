@@ -20,10 +20,10 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/params"
 	"golang.org/x/crypto/sha3"
 )
 

@@ -20,8 +20,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // senderFromServer is a types.Signer that remembers the sender address returned by the RPC

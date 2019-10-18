@@ -19,9 +19,9 @@ package main
 import (
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // RPCTransaction represents a transaction that will serialize to the RPC representation of a transaction

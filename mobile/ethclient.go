@@ -21,8 +21,8 @@ package geth
 import (
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/ethclient"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/ethclient"
 )
 
 // EthereumClient provides access to the Ethereum APIs.

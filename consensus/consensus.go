@@ -20,11 +20,11 @@ package consensus
 import (
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 // ChainReader defines a small collection of methods needed to access the local

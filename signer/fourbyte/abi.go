@@ -23,8 +23,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi"
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/accounts/abi"
+	"github.com/fchnetwork/fch/common"
 )
 
 // decodedCallData is an internal type to represent a method call parsed according

@@ -25,15 +25,15 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/consensus/misc"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/consensus/misc"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/params"
 )
 
 const (
@@ -352,7 +352,7 @@ func (w *worker) newWorkLoop(recommit time.Duration) {
 		case <-timer.C:
 			// If mining is running resubmit a new work cycle periodically to pull in
 			// higher priced transactions. Disable this overhead for pending blocks.
-			// Added by Fuchsia
+			// Added by FCH
 			if w.isRunning() && ((w.chainConfig.Clique == nil || w.chainConfig.Clique.Period > 0) || (w.chainConfig.Atmos == nil || w.chainConfig.Atmos.Period > 0)) {
 				// Short circuit if no new transaction arrives.
 				if atomic.LoadInt32(&w.newTxs) == 0 {
@@ -481,7 +481,7 @@ func (w *worker) mainLoop() {
 				if w.chainConfig.Clique != nil && w.chainConfig.Clique.Period == 0 {
 					w.commitNewWork(nil, true, time.Now().Unix())
 				}
-				// Added by Fuchsia
+				// Added by FCH
 				if w.chainConfig.Atmos != nil && w.chainConfig.Atmos.Period == 0 {
 					w.commitNewWork(nil, true, time.Now().Unix())
 				}

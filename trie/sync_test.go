@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/ethdb/memorydb"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/ethdb/memorydb"
 )
 
 // makeTestTrie create a sample test trie to test node-wise reconstruction.

@@ -20,10 +20,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // Tests that positional lookup metadata can be stored and retrieved.

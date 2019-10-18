@@ -22,12 +22,12 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/params"
 )
 
 func TestDefaultGenesisBlock(t *testing.T) {

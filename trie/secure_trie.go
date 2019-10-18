@@ -19,8 +19,8 @@ package trie
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/log"
 )
 
 // SecureTrie wraps a trie with key hashing. In a secure trie, all

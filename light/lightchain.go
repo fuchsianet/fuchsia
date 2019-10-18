@@ -26,17 +26,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
 	lru "github.com/hashicorp/golang-lru"
 )
 
@@ -477,7 +477,7 @@ func (lc *LightChain) SyncCheckpoint(ctx context.Context, checkpoint *params.Tru
 	if clique := lc.hc.Config().Clique; clique != nil {
 		latest -= latest % clique.Epoch // epoch snapshot for clique
 	}
-	// Added by Fuchsia
+	// Added by FCH
 	if atmos := lc.hc.Config().Atmos; atmos != nil {
 		latest -= latest % atmos.Epoch // epoch snapshot for Atmos
 	}

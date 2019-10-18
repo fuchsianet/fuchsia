@@ -19,10 +19,10 @@ package shhclient
 import (
 	"context"
 
-	"github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/rpc"
-	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
+	"github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/rpc"
+	whisper "github.com/fchnetwork/fch/whisper/whisperv6"
 )
 
 // Client defines typed wrappers for the Whisper v6 RPC API.

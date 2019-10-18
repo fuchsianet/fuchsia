@@ -23,13 +23,13 @@ import (
 	"net"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/simulations/pipes"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/simulations/pipes"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 // SimAdapter is a NodeAdapter which creates in-memory simulation nodes and

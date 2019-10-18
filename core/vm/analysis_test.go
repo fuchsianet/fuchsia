@@ -19,7 +19,7 @@ package vm
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 func TestJumpDestAnalysis(t *testing.T) {

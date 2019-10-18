@@ -24,11 +24,11 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // SignerUIAPI implements methods Clef provides for a UI to query, in the bidirectional communication

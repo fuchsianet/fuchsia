@@ -19,7 +19,7 @@ package geth
 import (
 	"os"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // SetVerbosity sets the global verbosity level (between 0 and 6 - see logger/verbosity.go).

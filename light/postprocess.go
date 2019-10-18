@@ -24,16 +24,16 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/bitutil"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/bitutil"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
+	"github.com/fchnetwork/fch/trie"
 )
 
 // IndexerConfig includes a set of configs for chain indexers.

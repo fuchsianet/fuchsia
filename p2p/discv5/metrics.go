@@ -16,7 +16,7 @@
 
 package discv5
 
-import "github.com/fuchsianet/fuchsia/metrics"
+import "github.com/fchnetwork/fch/metrics"
 
 var (
 	ingressTrafficMeter = metrics.NewRegisteredMeter("discv5/InboundTraffic", nil)

@@ -21,8 +21,8 @@ import (
 	"strings"
 
 	"github.com/cloudflare/cloudflare-go"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p/dnsdisc"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p/dnsdisc"
 	"gopkg.in/urfave/cli.v1"
 )
 

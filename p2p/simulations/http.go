@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/simulations/adapters"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/simulations/adapters"
+	"github.com/fchnetwork/fch/rpc"
 	"github.com/julienschmidt/httprouter"
 	"golang.org/x/net/websocket"
 )

@@ -34,8 +34,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 type allocItem struct{ Addr, Balance *big.Int }

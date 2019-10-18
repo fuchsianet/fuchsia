@@ -21,8 +21,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/event"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/event"
 )
 
 // Config contains the settings of the global account manager.

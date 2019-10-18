@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 // A BigInt represents a signed multi-precision integer.

@@ -19,7 +19,7 @@ package core
 import (
 	"runtime"
 
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // senderCacher is a concurrent transaction sender recoverer and cacher.

@@ -27,7 +27,7 @@ import (
 	"sync"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 	"github.com/gorilla/websocket"
 )
 

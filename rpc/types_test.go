@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
 )
 
 func TestBlockNumberJSONUnmarshal(t *testing.T) {

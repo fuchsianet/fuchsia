@@ -21,9 +21,9 @@ import (
 	"hash"
 	"sync/atomic"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/log"
 )
 
 // Config are the configuration options for the Interpreter

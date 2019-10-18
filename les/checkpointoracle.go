@@ -20,12 +20,12 @@ import (
 	"encoding/binary"
 	"sync/atomic"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/contracts/checkpointoracle"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/contracts/checkpointoracle"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/params"
 )
 
 // checkpointOracle is responsible for offering the latest stable checkpoint

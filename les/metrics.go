@@ -17,8 +17,8 @@
 package les
 
 import (
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/p2p"
 )
 
 var (

@@ -23,10 +23,10 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // Constants to match up protocol versions and messages

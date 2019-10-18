@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/params"
 )
 
 func minSwapStack(n int) int {

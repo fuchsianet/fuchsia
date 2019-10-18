@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/bitutil"
-	"github.com/fuchsianet/fuchsia/light"
+	"github.com/fchnetwork/fch/common/bitutil"
+	"github.com/fchnetwork/fch/light"
 )
 
 const (

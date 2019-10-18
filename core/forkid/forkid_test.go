@@ -21,9 +21,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // TestCreation tests that different genesis and fork rule combinations result in

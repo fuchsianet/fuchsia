@@ -23,9 +23,9 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/accounts/abi"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // makeTopics converts a filter query argument list into a filter topic set.

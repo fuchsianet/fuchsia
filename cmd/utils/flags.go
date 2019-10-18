@@ -32,38 +32,38 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/fdlimit"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/consensus/atmos"
-	"github.com/fuchsianet/fuchsia/consensus/clique"
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/dashboard"
-	"github.com/fuchsianet/fuchsia/eth"
-	"github.com/fuchsianet/fuchsia/eth/downloader"
-	"github.com/fuchsianet/fuchsia/eth/gasprice"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/ethstats"
-	"github.com/fuchsianet/fuchsia/graphql"
-	"github.com/fuchsianet/fuchsia/les"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/metrics/influxdb"
-	"github.com/fuchsianet/fuchsia/miner"
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/discv5"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/nat"
-	"github.com/fuchsianet/fuchsia/p2p/netutil"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rpc"
-	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/fdlimit"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/consensus/atmos"
+	"github.com/fchnetwork/fch/consensus/clique"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/dashboard"
+	"github.com/fchnetwork/fch/eth"
+	"github.com/fchnetwork/fch/eth/downloader"
+	"github.com/fchnetwork/fch/eth/gasprice"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/ethstats"
+	"github.com/fchnetwork/fch/graphql"
+	"github.com/fchnetwork/fch/les"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/metrics/influxdb"
+	"github.com/fchnetwork/fch/miner"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/discv5"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/nat"
+	"github.com/fchnetwork/fch/p2p/netutil"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rpc"
+	whisper "github.com/fchnetwork/fch/whisper/whisperv6"
 	pcsclite "github.com/gballet/go-libpcsclite"
 	cli "gopkg.in/urfave/cli.v1"
 )
@@ -729,7 +729,7 @@ var (
 	MetricsInfluxDBDatabaseFlag = cli.StringFlag{
 		Name:  "metrics.influxdb.database",
 		Usage: "InfluxDB database name to push reported metrics to",
-		Value: "fuchsia",
+		Value: "fch",
 	}
 	MetricsInfluxDBUsernameFlag = cli.StringFlag{
 		Name:  "metrics.influxdb.username",
@@ -761,7 +761,7 @@ var (
 		Usage: "External EVM configuration (default = built-in interpreter)",
 		Value: "",
 	}
-	// Added by Fuchsia
+	// Added by FCH
 	AtmosEthereumApiEndpointFlag = cli.StringFlag{
 		Name:  "atmos.ethereum.endpoint",
 		Usage: "Ethereum IPC or RPC endpoint for Atmos synchronization",
@@ -1670,7 +1670,7 @@ func SplitTagsFlag(tagsFlag string) map[string]string {
 	return tagsMap
 }
 
-// Added by Fuchsia
+// Added by FCH
 func SetAtmosConfig(ctx *cli.Context, cfg *eth.Config) {
 	if ctx.GlobalIsSet(AtmosEthereumApiEndpointFlag.Name) {
 		log.Info("Ethereum API endpoint", "endpoint", ctx.GlobalString(AtmosEthereumApiEndpointFlag.Name))
@@ -1731,7 +1731,7 @@ func MakeChain(ctx *cli.Context, stack *node.Node) (chain *core.BlockChain, chai
 	var engine consensus.Engine
 	if config.Clique != nil {
 		engine = clique.New(config.Clique, chainDb)
-	// Added by Fuchsia
+	// Added by FCH
 	} else if config.Atmos != nil {
 		engine = atmos.New(config.Atmos, chainDb)
 	} else {

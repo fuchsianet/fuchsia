@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/eth/downloader"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fchnetwork/fch/eth/downloader"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/enode"
 )
 
 // Tests that fast sync gets disabled as soon as a real block is successfully

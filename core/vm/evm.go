@@ -21,9 +21,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/params"
 )
 
 // emptyCodeHash is used by create to ensure deployment is disallowed to already

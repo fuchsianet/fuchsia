@@ -23,12 +23,12 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	math2 "github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	math2 "github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/params"
 )
 
 // alethGenesisSpec represents the genesis specification format used by the

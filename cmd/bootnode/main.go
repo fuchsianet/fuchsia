@@ -24,14 +24,14 @@ import (
 	"net"
 	"os"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p/discover"
-	"github.com/fuchsianet/fuchsia/p2p/discv5"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/nat"
-	"github.com/fuchsianet/fuchsia/p2p/netutil"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p/discover"
+	"github.com/fchnetwork/fch/p2p/discv5"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/nat"
+	"github.com/fchnetwork/fch/p2p/netutil"
 )
 
 func main() {

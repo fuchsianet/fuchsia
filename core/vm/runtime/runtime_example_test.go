@@ -19,8 +19,8 @@ package runtime_test
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/vm/runtime"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/vm/runtime"
 )
 
 func ExampleExecute() {

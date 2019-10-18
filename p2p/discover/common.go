@@ -20,9 +20,9 @@ import (
 	"crypto/ecdsa"
 	"net"
 
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/netutil"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/netutil"
 )
 
 type UDPConn interface {

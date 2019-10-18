@@ -32,13 +32,13 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/internal/testlog"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/enr"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/internal/testlog"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/enr"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 func init() {

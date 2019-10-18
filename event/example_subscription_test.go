@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/event"
+	"github.com/fchnetwork/fch/event"
 )
 
 func ExampleNewSubscription() {

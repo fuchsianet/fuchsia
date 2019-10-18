@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // walletDockerfile is the Dockerfile required to run a web wallet.

@@ -22,7 +22,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/core/asm"
+	"github.com/fchnetwork/fch/core/asm"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

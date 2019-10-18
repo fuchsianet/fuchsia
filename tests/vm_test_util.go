@@ -22,15 +22,15 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/params"
 )
 
 // VMTest checks EVM execution without block or transaction context.

@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fchnetwork/fch/metrics"
 )
 
 var (

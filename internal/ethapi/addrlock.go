@@ -19,7 +19,7 @@ package ethapi
 import (
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 type AddrLocker struct {

@@ -5,8 +5,8 @@ import (
 	uurl "net/url"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
 	"github.com/influxdata/influxdb/client"
 )
 

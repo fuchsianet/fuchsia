@@ -19,7 +19,7 @@ package vm
 import (
 	"errors"
 
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/params"
 )
 
 type (

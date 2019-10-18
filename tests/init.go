@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/params"
 )
 
 // Forks table defines supported forks and their chain config.

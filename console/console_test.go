@@ -26,13 +26,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/eth"
-	"github.com/fuchsianet/fuchsia/internal/jsre"
-	"github.com/fuchsianet/fuchsia/miner"
-	"github.com/fuchsianet/fuchsia/node"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/eth"
+	"github.com/fchnetwork/fch/internal/jsre"
+	"github.com/fchnetwork/fch/miner"
+	"github.com/fchnetwork/fch/node"
 )
 
 const (

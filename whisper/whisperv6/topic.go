@@ -19,8 +19,8 @@
 package whisperv6
 
 import (
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
 )
 
 // TopicType represents a cryptographically secure, probabilistic partial

@@ -31,7 +31,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 	"github.com/rs/cors"
 )
 

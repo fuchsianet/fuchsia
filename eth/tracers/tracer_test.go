@@ -24,10 +24,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/params"
 )
 
 type account struct{}

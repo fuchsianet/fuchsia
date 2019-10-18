@@ -26,9 +26,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
 	"github.com/golang/snappy"
 )
 

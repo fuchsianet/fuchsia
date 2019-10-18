@@ -19,9 +19,9 @@ package simulations
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/simulations/adapters"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/simulations/adapters"
 )
 
 func newTestNetwork(t *testing.T, nodeCount int) (*Network, []enode.ID) {

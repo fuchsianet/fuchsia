@@ -193,7 +193,7 @@ class Footer extends Component<Props, State> {
 						<Typography type='caption' color='inherit'>
 							<span style={commonStyles.light}>{'Commit '}</span>
 							<a
-								href={`https://github.com/fuchsianet/fuchsia/commit/${general.commit}`}
+								href={`https://github.com/fchnetwork/fch/commit/${general.commit}`}
 								target='_blank'
 								rel='noopener noreferrer'
 								style={styles.link}

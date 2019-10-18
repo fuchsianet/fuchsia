@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // Tests that the account management snippets work correctly.

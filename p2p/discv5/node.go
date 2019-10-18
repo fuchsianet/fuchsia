@@ -30,8 +30,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // Node represents a host on the network.

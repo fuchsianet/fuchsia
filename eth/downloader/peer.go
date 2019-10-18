@@ -29,9 +29,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/log"
 )
 
 const (

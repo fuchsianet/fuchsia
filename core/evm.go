@@ -19,10 +19,10 @@ package core
 import (
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/core/vm"
 )
 
 // ChainContext supports retrieving headers and consensus parameters from the

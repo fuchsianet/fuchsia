@@ -25,8 +25,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/crypto"
 	"github.com/pborman/uuid"
 	"golang.org/x/crypto/pbkdf2"
 )

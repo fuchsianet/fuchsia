@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/common/math"
 )
 
 var (

@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
 )
 
 var _ = (*logMarshaling)(nil)

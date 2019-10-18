@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

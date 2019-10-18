@@ -22,7 +22,7 @@ package geth
 import (
 	"errors"
 
-	"github.com/fuchsianet/fuchsia/p2p/discv5"
+	"github.com/fchnetwork/fch/p2p/discv5"
 )
 
 // Enode represents a host on the network.

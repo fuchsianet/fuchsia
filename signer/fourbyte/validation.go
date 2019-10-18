@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/signer/core"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/signer/core"
 )
 
 // ValidateTransaction does a number of checks on the supplied transaction, and

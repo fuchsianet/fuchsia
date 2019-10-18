@@ -26,7 +26,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fchnetwork/fch/common/hexutil"
 	"golang.org/x/crypto/sha3"
 )
 

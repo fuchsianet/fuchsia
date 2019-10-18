@@ -17,10 +17,10 @@
 package eth
 
 import (
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/forkid"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/forkid"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // ethEntry is the "eth" ENR entry which advertises eth protocol

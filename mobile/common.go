@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
 )
 
 // Hash represents the 32 byte Keccak256 hash of arbitrary data.

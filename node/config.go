@@ -26,17 +26,17 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/external"
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/accounts/scwallet"
-	"github.com/fuchsianet/fuchsia/accounts/usbwallet"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/external"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/accounts/scwallet"
+	"github.com/fchnetwork/fch/accounts/usbwallet"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 const (
@@ -288,7 +288,7 @@ func (c *Config) NodeName() string {
 	name := c.name()
 	// Backwards compatibility: previous versions used title-cased "Geth", keep that.
 	if name == "geth" || name == "geth-testnet" {
-		name = "Fuchsia"
+		name = "FCH"
 	}
 	if c.UserIdent != "" {
 		name += "/" + c.UserIdent
@@ -336,7 +336,7 @@ func (c *Config) ResolvePath(path string) string {
 		if c.name() == "geth" {
 			oldpath = filepath.Join(c.DataDir, path)
 		}
-		if c.Name == "fuchsia" {
+		if c.Name == "fch" {
 			oldpath = filepath.Join(c.DataDir, path)
 		}
 		if oldpath != "" && common.FileExist(oldpath) {

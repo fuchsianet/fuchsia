@@ -19,7 +19,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/params"
 )
 
 // EnableEIP enables the given EIP on the config.

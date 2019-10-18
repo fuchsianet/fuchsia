@@ -5,7 +5,7 @@ package whisperv6
 import (
 	"encoding/json"
 
-	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fchnetwork/fch/common/hexutil"
 )
 
 var _ = (*criteriaOverride)(nil)

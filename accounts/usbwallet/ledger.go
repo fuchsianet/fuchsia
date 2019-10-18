@@ -28,13 +28,13 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // ledgerOpcode is an enumeration encoding the supported Ledger opcodes.

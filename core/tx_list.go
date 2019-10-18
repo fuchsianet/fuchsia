@@ -22,9 +22,9 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/log"
 )
 
 // nonceHeap is a heap.Interface implementation over 64bit unsigned integers for

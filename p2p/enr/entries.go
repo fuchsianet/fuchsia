@@ -21,7 +21,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // Entry is implemented by known node record entry types.

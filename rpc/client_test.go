@@ -31,7 +31,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 func TestClientRequest(t *testing.T) {

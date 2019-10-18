@@ -20,7 +20,7 @@ import (
 	"crypto/sha256"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/crypto"
 	"golang.org/x/crypto/pbkdf2"
 )
 

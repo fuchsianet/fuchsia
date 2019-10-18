@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi"
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/accounts/abi"
+	"github.com/fchnetwork/fch/common"
 )
 
 func TestMakeTopics(t *testing.T) {

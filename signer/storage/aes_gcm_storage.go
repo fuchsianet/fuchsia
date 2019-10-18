@@ -25,7 +25,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 type storedCredential struct {

@@ -21,12 +21,12 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/ethdb/memorydb"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/ethdb/memorydb"
+	"github.com/fchnetwork/fch/trie"
 )
 
 // testAccount is the data associated with an account used by the state tests.

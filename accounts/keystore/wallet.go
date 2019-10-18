@@ -19,10 +19,10 @@ package keystore
 import (
 	"math/big"
 
-	ethereum "github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
+	ethereum "github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // keystoreWallet implements the accounts.Wallet interface for the original

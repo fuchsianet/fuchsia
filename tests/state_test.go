@@ -23,7 +23,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fchnetwork/fch/core/vm"
 )
 
 func TestState(t *testing.T) {

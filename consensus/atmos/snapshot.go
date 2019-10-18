@@ -1,18 +1,18 @@
-// Copyright 2017 The fuchsia Authors
-// This file is part of the fuchsia library.
+// Copyright 2017 The FCH Authors
+// This file is part of the FCH library.
 //
-// The fuchsia library is free software: you can redistribute it and/or modify
+// The FCH library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The fuchsia library is distributed in the hope that it will be useful,
+// The FCH library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the fuchsia library. If not, see <http://www.gnu.org/licenses/>.
+// along with the FCH library. If not, see <http://www.gnu.org/licenses/>.
 
 package atmos
 
@@ -22,11 +22,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/params"
 	lru "github.com/hashicorp/golang-lru"
 )
 

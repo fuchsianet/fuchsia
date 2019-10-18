@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 func TestInterfaceGetSet(t *testing.T) {

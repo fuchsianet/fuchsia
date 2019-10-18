@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

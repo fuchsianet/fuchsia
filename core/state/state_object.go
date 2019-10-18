@@ -23,10 +23,10 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 var emptyCodeHash = crypto.Keccak256(nil)

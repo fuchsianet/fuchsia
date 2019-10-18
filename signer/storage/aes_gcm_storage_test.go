@@ -23,8 +23,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/log"
 	"github.com/mattn/go-colorable"
 )
 

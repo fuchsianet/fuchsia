@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind/backends"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/accounts/abi/bind/backends"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 var testKey, _ = crypto.HexToECDSA("b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291")

@@ -25,12 +25,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/signer/core"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/signer/core"
 )
 
 var typesStandard = core.Types{

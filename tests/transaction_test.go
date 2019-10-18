@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/params"
 )
 
 func TestTransaction(t *testing.T) {

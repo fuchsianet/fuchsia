@@ -27,8 +27,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 func tmpKeyStoreIface(t *testing.T, encrypted bool) (dir string, ks keyStore) {

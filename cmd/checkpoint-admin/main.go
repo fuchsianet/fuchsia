@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/common/fdlimit"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/common/fdlimit"
+	"github.com/fchnetwork/fch/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

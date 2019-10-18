@@ -22,12 +22,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/trie"
 	"golang.org/x/crypto/sha3"
 )
 

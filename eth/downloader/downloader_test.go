@@ -26,13 +26,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/trie"
 )
 
 // Reduce some of the parameters to make the tester faster.

@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 // In this example, our client wishes to track the latest 'block number'

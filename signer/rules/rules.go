@@ -22,11 +22,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/internal/ethapi"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/signer/core"
-	"github.com/fuchsianet/fuchsia/signer/rules/deps"
-	"github.com/fuchsianet/fuchsia/signer/storage"
+	"github.com/fchnetwork/fch/internal/ethapi"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/signer/core"
+	"github.com/fchnetwork/fch/signer/rules/deps"
+	"github.com/fchnetwork/fch/signer/storage"
 	"github.com/robertkrimen/otto"
 )
 

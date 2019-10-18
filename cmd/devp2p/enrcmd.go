@@ -27,9 +27,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/enr"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/enr"
+	"github.com/fchnetwork/fch/rlp"
 	"gopkg.in/urfave/cli.v1"
 )
 

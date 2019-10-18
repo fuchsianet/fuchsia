@@ -23,10 +23,10 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/contracts/checkpointoracle/contract"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/contracts/checkpointoracle/contract"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // CheckpointOracle is a Go wrapper around an on-chain light client checkpoint oracle.

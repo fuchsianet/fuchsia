@@ -22,8 +22,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/p2p/enode"
 )
 
 // clientTree is a full tree being synced.

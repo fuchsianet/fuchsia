@@ -27,13 +27,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind/backends"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/contracts/checkpointoracle/contract"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/accounts/abi/bind/backends"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/contracts/checkpointoracle/contract"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/params"
 )
 
 var (

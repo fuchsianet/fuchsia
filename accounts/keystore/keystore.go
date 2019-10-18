@@ -33,11 +33,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/event"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/event"
 )
 
 var (

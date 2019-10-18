@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/nat"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/nat"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 const (

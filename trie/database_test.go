@@ -19,8 +19,8 @@ package trie
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/ethdb/memorydb"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/ethdb/memorydb"
 )
 
 // Tests that the trie database returns a missing trie node error if attempting

@@ -19,7 +19,7 @@ package params
 import (
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 // DAOForkBlockExtra is the block header extra-data field to set for the DAO fork

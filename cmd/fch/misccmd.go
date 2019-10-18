@@ -23,10 +23,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/eth"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/eth"
+	"github.com/fchnetwork/fch/params"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -80,7 +80,7 @@ The output of this command is supposed to be machine-readable.
 func makecache(ctx *cli.Context) error {
 	args := ctx.Args()
 	if len(args) != 2 {
-		utils.Fatalf(`Usage: fuchsia makecache <block number> <outputdir>`)
+		utils.Fatalf(`Usage: FCH makecache <block number> <outputdir>`)
 	}
 	block, err := strconv.ParseUint(args[0], 0, 64)
 	if err != nil {
@@ -95,7 +95,7 @@ func makecache(ctx *cli.Context) error {
 func makedag(ctx *cli.Context) error {
 	args := ctx.Args()
 	if len(args) != 2 {
-		utils.Fatalf(`Usage: fuchsia makedag <block number> <outputdir>`)
+		utils.Fatalf(`Usage: FCH makedag <block number> <outputdir>`)
 	}
 	block, err := strconv.ParseUint(args[0], 0, 64)
 	if err != nil {

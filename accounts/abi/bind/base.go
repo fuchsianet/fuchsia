@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/accounts/abi"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/event"
+	"github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/accounts/abi"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/event"
 )
 
 // SignerFn is a signer function callback when a contract requires a method to

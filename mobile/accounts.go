@@ -23,10 +23,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 const (

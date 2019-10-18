@@ -22,9 +22,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/console"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/console"
+	"github.com/fchnetwork/fch/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -22,12 +22,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/common/prque"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/common/prque"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 const (

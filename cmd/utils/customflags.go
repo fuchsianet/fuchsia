@@ -26,7 +26,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fchnetwork/fch/common/math"
 	"gopkg.in/urfave/cli.v1"
 )
 

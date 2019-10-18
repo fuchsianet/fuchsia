@@ -23,9 +23,9 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 func generateMessageParams() (*MessageParams, error) {

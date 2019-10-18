@@ -5,8 +5,8 @@ Maintainer: {{.Author}}
 Build-Depends: debhelper (>= 8.0.0), golang-1.11
 Standards-Version: 3.9.5
 Homepage: https://ethereum.org
-Vcs-Git: git://github.com/fuchsianet/fuchsia.git
-Vcs-Browser: https://github.com/fuchsianet/fuchsia
+Vcs-Git: git://github.com/fchnetwork/fch.git
+Vcs-Browser: https://github.com/fchnetwork/fch
 
 Package: {{.Name}}
 Architecture: any

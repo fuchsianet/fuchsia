@@ -31,9 +31,9 @@ import (
 
 	"gopkg.in/check.v1"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // Tests that updating a state trie does not leak any database writes prior to
@@ -493,7 +493,7 @@ func TestCopyOfCopy(t *testing.T) {
 // Tests a regression where committing a copy lost some internal meta information,
 // leading to corrupted subsequent copies.
 //
-// See https://github.com/fuchsianet/fuchsia/issues/20106.
+// See https://github.com/fchnetwork/fch/issues/20106.
 func TestCopyCommitCopy(t *testing.T) {
 	state, _ := New(common.Hash{}, NewDatabase(rawdb.NewMemoryDatabase()))
 
@@ -565,7 +565,7 @@ func TestCopyCommitCopy(t *testing.T) {
 // Tests a regression where committing a copy lost some internal meta information,
 // leading to corrupted subsequent copies.
 //
-// See https://github.com/fuchsianet/fuchsia/issues/20106.
+// See https://github.com/fchnetwork/fch/issues/20106.
 func TestCopyCopyCommitCopy(t *testing.T) {
 	state, _ := New(common.Hash{}, NewDatabase(rawdb.NewMemoryDatabase()))
 

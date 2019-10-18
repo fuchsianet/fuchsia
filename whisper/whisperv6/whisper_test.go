@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 	"golang.org/x/crypto/pbkdf2"
 )
 

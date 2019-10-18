@@ -22,11 +22,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p/discover"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p/discover"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

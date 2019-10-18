@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // manageServers displays a list of servers the user can disconnect from, and an

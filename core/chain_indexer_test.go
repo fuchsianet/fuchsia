@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // Runs multiple tests with randomized parameters.

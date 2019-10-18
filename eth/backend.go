@@ -25,33 +25,33 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/consensus/atmos"
-	"github.com/fuchsianet/fuchsia/consensus/clique"
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/bloombits"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/eth/downloader"
-	"github.com/fuchsianet/fuchsia/eth/filters"
-	"github.com/fuchsianet/fuchsia/eth/gasprice"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/internal/ethapi"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/miner"
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/enr"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/consensus/atmos"
+	"github.com/fchnetwork/fch/consensus/clique"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/bloombits"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/eth/downloader"
+	"github.com/fchnetwork/fch/eth/filters"
+	"github.com/fchnetwork/fch/eth/gasprice"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/internal/ethapi"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/miner"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/enr"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 type LesServer interface {
@@ -140,8 +140,8 @@ func New(ctx *node.ServiceContext, config *Config) (*Ethereum, error) {
 	if _, ok := genesisErr.(*params.ConfigCompatError); genesisErr != nil && !ok {
 		return nil, genesisErr
 	}
-	// Added by Fuchsia
-	// Override Fuchsia API endpoint for Atmos consensus
+	// Added by FCH
+	// Override FCH API endpoint for Atmos consensus
 	if chainConfig.Atmos != nil {
 		if config.EthereumApiEndpoint != "" {
 			chainConfig.Atmos.EthereumApiEndpoint = config.EthereumApiEndpoint
@@ -172,7 +172,7 @@ func New(ctx *node.ServiceContext, config *Config) (*Ethereum, error) {
 	if bcVersion != nil {
 		dbVer = fmt.Sprintf("%d", *bcVersion)
 	}
-	log.Info("Initialising Fuchsia protocol", "versions", ProtocolVersions, "network", config.NetworkId, "dbversion", dbVer)
+	log.Info("Initialising FCH protocol", "versions", ProtocolVersions, "network", config.NetworkId, "dbversion", dbVer)
 
 	if !config.SkipBcVersionCheck {
 		if bcVersion != nil && *bcVersion > core.BlockChainVersion {
@@ -240,7 +240,7 @@ func makeExtraData(extra []byte) []byte {
 		// create default extradata
 		extra, _ = rlp.EncodeToBytes([]interface{}{
 			uint(params.VersionMajor<<16 | params.VersionMinor<<8 | params.VersionPatch),
-			"fuchsia",
+			"FCH",
 			runtime.Version(),
 			runtime.GOOS,
 		})
@@ -258,7 +258,7 @@ func CreateConsensusEngine(ctx *node.ServiceContext, chainConfig *params.ChainCo
 	if chainConfig.Clique != nil {
 		return clique.New(chainConfig.Clique, db)
 	}
-	// Added by Fuchsia
+	// Added by FCH
 	if chainConfig.Atmos != nil {
 		return atmos.New(chainConfig.Atmos, db)
 	}
@@ -431,7 +431,7 @@ func (s *Ethereum) shouldPreserve(block *types.Block) bool {
 	if _, ok := s.engine.(*clique.Clique); ok {
 		return false
 	}
-	// Added by Fuchsia
+	// Added by FCH
 	if _, ok := s.engine.(*atmos.Atmos); ok {
 		return false
 	}
@@ -484,7 +484,7 @@ func (s *Ethereum) StartMining(threads int) error {
 			}
 			clique.Authorize(eb, wallet.SignData)
 		}
-		// Added by Fuchsia
+		// Added by FCH
 		if atmos, ok := s.engine.(*atmos.Atmos); ok {
 			wallet, err := s.accountManager.Find(accounts.Account{Address: eb})
 			if wallet == nil || err != nil {

@@ -17,7 +17,7 @@
 package rawdb
 
 import (
-	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fchnetwork/fch/ethdb"
 )
 
 // table is a wrapper around a database that prefixes each key access with a pre-

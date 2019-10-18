@@ -17,10 +17,10 @@
 package clique
 
 import (
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 // API is a user facing RPC API to allow controlling the signer and voting

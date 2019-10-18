@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fchnetwork/fch/core/vm"
 )
 
 func TestVM(t *testing.T) {

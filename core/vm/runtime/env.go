@@ -17,9 +17,9 @@
 package runtime
 
 import (
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

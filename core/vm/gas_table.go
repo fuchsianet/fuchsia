@@ -19,9 +19,9 @@ package vm
 import (
 	"errors"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/params"
 )
 
 // memoryGasCost calculates the quadratic gas for memory expansion. It does so

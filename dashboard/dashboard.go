@@ -35,10 +35,10 @@ import (
 
 	"io"
 
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rpc"
 	"github.com/mohae/deepcopy"
 	"golang.org/x/net/websocket"
 )

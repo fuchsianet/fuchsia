@@ -24,12 +24,12 @@ import (
 	"net"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p/nat"
-	"github.com/fuchsianet/fuchsia/p2p/netutil"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p/nat"
+	"github.com/fchnetwork/fch/p2p/netutil"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 const Version = 4

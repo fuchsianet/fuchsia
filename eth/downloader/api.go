@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	ethereum "github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/rpc"
+	ethereum "github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

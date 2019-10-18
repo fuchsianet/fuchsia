@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // Tests whether remote HTTP servers are correctly notified of new work.

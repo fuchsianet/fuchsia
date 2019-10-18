@@ -34,7 +34,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // Handler is the global debugging handler.

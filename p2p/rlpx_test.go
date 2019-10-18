@@ -32,10 +32,10 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/crypto/ecies"
-	"github.com/fuchsianet/fuchsia/p2p/simulations/pipes"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/crypto/ecies"
+	"github.com/fchnetwork/fch/p2p/simulations/pipes"
+	"github.com/fchnetwork/fch/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

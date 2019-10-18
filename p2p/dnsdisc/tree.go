@@ -26,10 +26,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/enr"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/enr"
+	"github.com/fchnetwork/fch/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

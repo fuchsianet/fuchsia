@@ -21,11 +21,11 @@ import (
 	"errors"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/eth/downloader"
-	"github.com/fuchsianet/fuchsia/light"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/eth/downloader"
+	"github.com/fchnetwork/fch/light"
+	"github.com/fchnetwork/fch/log"
 )
 
 var errInvalidCheckpoint = errors.New("invalid advertised checkpoint")

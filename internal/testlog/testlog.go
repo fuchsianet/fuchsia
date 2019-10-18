@@ -20,7 +20,7 @@ package testlog
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // Logger returns a logger which logs to the unit test log of t.

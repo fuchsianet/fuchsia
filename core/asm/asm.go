@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fchnetwork/fch/core/vm"
 )
 
 // Iterator for disassembled EVM instructions

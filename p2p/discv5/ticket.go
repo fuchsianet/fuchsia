@@ -25,10 +25,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
 )
 
 const (

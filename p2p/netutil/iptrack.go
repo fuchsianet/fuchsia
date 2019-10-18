@@ -19,7 +19,7 @@ package netutil
 import (
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fchnetwork/fch/common/mclock"
 )
 
 // IPTracker predicts the external endpoint, i.e. IP address and port, of the local host

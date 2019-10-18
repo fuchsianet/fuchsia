@@ -24,8 +24,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p/enode"
 )
 
 func TestUDPv4_Lookup(t *testing.T) {

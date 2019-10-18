@@ -25,11 +25,11 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
 	duktape "gopkg.in/olebedev/go-duktape.v3"
 )
 

@@ -24,8 +24,8 @@ import (
 
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/internal/debug"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/internal/debug"
 	cli "gopkg.in/urfave/cli.v1"
 )
 
@@ -65,7 +65,7 @@ type flagGroup struct {
 // AppHelpFlagGroups is the application flags, grouped by functionality.
 var AppHelpFlagGroups = []flagGroup{
 	{
-		Name: "Fuchsia",
+		Name: "FCH",
 		Flags: []cli.Flag{
 			configFileFlag,
 			utils.DataDirFlag,

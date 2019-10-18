@@ -23,8 +23,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p/enr"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p/enr"
 )
 
 var parseNodeTests = []struct {

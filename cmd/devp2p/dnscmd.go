@@ -25,11 +25,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/console"
-	"github.com/fuchsianet/fuchsia/p2p/dnsdisc"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/console"
+	"github.com/fchnetwork/fch/p2p/dnsdisc"
+	"github.com/fchnetwork/fch/p2p/enode"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

@@ -24,13 +24,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/eth/downloader"
-	"github.com/fuchsianet/fuchsia/eth/gasprice"
-	"github.com/fuchsianet/fuchsia/miner"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/eth/downloader"
+	"github.com/fchnetwork/fch/eth/gasprice"
+	"github.com/fchnetwork/fch/miner"
+	"github.com/fchnetwork/fch/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.
@@ -158,7 +158,7 @@ type Config struct {
 	// Istanbul block override (TODO: remove after the fork)
 	OverrideIstanbul *big.Int
 
-	// Added by Fuchsia
+	// Added by FCH
 	// Ethereum IPC or RPC endpoint for Atmos synchronization
 	EthereumApiEndpoint string
 

@@ -23,10 +23,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/rlp"
-	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/rlp"
+	whisper "github.com/fchnetwork/fch/whisper/whisperv6"
 )
 
 // A Nonce is a 64-bit hash which proves (combined with the mix-hash) that

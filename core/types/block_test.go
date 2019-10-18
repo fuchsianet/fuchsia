@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // from bcValidBlockTest.json, "SimpleTx"

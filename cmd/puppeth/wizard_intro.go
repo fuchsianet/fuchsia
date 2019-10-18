@@ -26,7 +26,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // makeWizard creates and returns a new puppeth wizard.

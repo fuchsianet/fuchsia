@@ -26,14 +26,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/internal/debug"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/internal/debug"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/rpc"
 	"github.com/prometheus/tsdb/fileutil"
 )
 

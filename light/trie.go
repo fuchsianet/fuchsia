@@ -21,12 +21,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/trie"
 )
 
 func NewState(ctx context.Context, head *types.Header, odr OdrBackend) *state.StateDB {

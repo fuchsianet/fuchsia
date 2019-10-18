@@ -31,9 +31,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/log"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

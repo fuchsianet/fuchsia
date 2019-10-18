@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/ethdb"
 )
 
 // Tests that the node iterator indeed walks over the entire database contents.

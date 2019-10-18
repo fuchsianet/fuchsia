@@ -19,15 +19,15 @@ package main
 import (
 	"strconv"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/accounts/external"
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/contracts/checkpointoracle"
-	"github.com/fuchsianet/fuchsia/ethclient"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/accounts/external"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/contracts/checkpointoracle"
+	"github.com/fchnetwork/fch/ethclient"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

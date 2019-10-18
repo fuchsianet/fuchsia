@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/params"
 )
 
 // Tests that simple header verification works, for both good and bad blocks.

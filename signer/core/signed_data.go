@@ -30,15 +30,15 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/abi"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/consensus/clique"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/abi"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/consensus/clique"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 type SigFormat struct {
@@ -263,7 +263,7 @@ func (api *SignerAPI) determineSignatureFormat(ctx context.Context, contentType 
 		// Clique uses V on the form 0 or 1
 		useEthereumV = false
 		req = &SignDataRequest{ContentType: mediaType, Rawdata: cliqueRlp, Messages: messages, Hash: sighash}
-	// Added by Fuchsia
+	// Added by FCH
 	case ApplicationAtmos.Mime:
 		stringData, ok := data.(string)
 		if !ok {

@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 var (

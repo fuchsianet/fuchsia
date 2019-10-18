@@ -21,13 +21,13 @@ import (
 	"math/big"
 	"testing"
 
-	ethereum "github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind/backends"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
+	ethereum "github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/accounts/abi/bind/backends"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 func TestSimulatedBackend(t *testing.T) {

@@ -22,8 +22,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
 )
 
 type JSONLogger struct {

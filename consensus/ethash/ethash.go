@@ -34,12 +34,12 @@ import (
 	"unsafe"
 
 	mmap "github.com/edsrzf/mmap-go"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/rpc"
 	"github.com/hashicorp/golang-lru/simplelru"
 )
 

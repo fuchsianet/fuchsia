@@ -25,14 +25,14 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/consensus/misc"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/consensus/misc"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

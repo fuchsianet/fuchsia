@@ -24,8 +24,8 @@ import (
 	"testing"
 	"testing/quick"
 
-	"github.com/fuchsianet/fuchsia/p2p/enr"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/p2p/enr"
+	"github.com/fchnetwork/fch/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

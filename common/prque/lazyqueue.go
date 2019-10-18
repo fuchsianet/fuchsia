@@ -20,7 +20,7 @@ import (
 	"container/heap"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fchnetwork/fch/common/mclock"
 )
 
 // LazyQueue is a priority queue data structure where priorities can change over

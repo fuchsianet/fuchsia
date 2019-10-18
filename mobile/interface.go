@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 // Interface represents a wrapped version of Go's interface{}, with the capacity

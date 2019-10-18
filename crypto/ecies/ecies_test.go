@@ -39,7 +39,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // Ensure the KDF generates appropriately sized keys.

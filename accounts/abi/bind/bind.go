@@ -30,8 +30,8 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/accounts/abi"
+	"github.com/fchnetwork/fch/log"
 )
 
 // Lang is a target programming language selector to generate bindings for.

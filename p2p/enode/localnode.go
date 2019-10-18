@@ -26,9 +26,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p/enr"
-	"github.com/fuchsianet/fuchsia/p2p/netutil"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p/enr"
+	"github.com/fchnetwork/fch/p2p/netutil"
 )
 
 const (

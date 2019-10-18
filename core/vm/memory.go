@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fchnetwork/fch/common/math"
 )
 
 // Memory implements a simple memory model for the ethereum virtual machine.

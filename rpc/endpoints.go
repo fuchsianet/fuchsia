@@ -19,7 +19,7 @@ package rpc
 import (
 	"net"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // StartHTTPEndpoint starts the HTTP RPC endpoint, configured with cors/vhosts/modules

@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/prque"
-	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/prque"
+	"github.com/fchnetwork/fch/ethdb"
 )
 
 // ErrNotRequested is returned by the trie sync when it's requested to process a

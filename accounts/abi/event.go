@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // Event is an event potentially triggered by the EVM's LOG mechanism. The Event

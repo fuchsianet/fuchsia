@@ -19,8 +19,8 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/enr"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/enr"
 )
 
 // Protocol represents a P2P subprotocol implementation.

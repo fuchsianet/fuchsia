@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

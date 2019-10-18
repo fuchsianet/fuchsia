@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/fuchsianet/fuchsia/internal/debug"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/internal/debug"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

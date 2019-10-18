@@ -54,7 +54,7 @@ func TestBloom(t *testing.T) {
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fchnetwork/fch/core/state"
 )
 
 func TestBloom9(t *testing.T) {

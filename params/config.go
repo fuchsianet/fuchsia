@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // Genesis hashes to enforce below configs on.
@@ -208,8 +208,8 @@ var (
 		Threshold: 2,
 	}
 
-	// Added by Fuchsia. This seems to be used only in genesis.go so we may not need it. Consider to remove later
-	// AtmosChainConfig contains the chain parameters to run a node on the Fuchsia network.
+	// Added by FCH. This seems to be used only in genesis.go so we may not need it. Consider to remove later
+	// AtmosChainConfig contains the chain parameters to run a node on the FCH network.
 	AtmosChainConfig = &ChainConfig{
 		ChainID:             big.NewInt(2018),
 		HomesteadBlock:      big.NewInt(0),
@@ -318,7 +318,7 @@ type ChainConfig struct {
 	// Various consensus engines
 	Ethash *EthashConfig `json:"ethash,omitempty"`
 	Clique *CliqueConfig `json:"clique,omitempty"`
-	// Added by Fuchsia
+	// Added by FCH
 	Atmos *AtmosConfig `json:"atmos,omitempty"`
 }
 
@@ -341,17 +341,17 @@ func (c *CliqueConfig) String() string {
 	return "clique"
 }
 
-// Added by Fuchsia
-// AtmosConfig is the consensus engine configs for fuchsia proof-of-authority based sealing.
+// Added by FCH
+// AtmosConfig is the consensus engine configs for FCH proof-of-authority based sealing.
 type AtmosConfig struct {
 	Period                     uint64         `json:"period"`              // Number of seconds between blocks to enforce
 	Epoch                      uint64         `json:"epoch"`               // Epoch length to reset votes and checkpoint
-	GovernanceAddress          common.Address `json:"governanceAddress"`   // Governance contract Fuchsia address
-	EthereumApiEndpoint string        		  `json:"ethereumApiEndpoint"` // Fuchsia node API endpoint (ipc, http, etc)
-	EnableTestNet bool                        `json:"enableTestNet"`	   // Enable Fuchsia test net
+	GovernanceAddress          common.Address `json:"governanceAddress"`   // Governance contract FCH address
+	EthereumApiEndpoint string        		  `json:"ethereumApiEndpoint"` // FCH node API endpoint (ipc, http, etc)
+	EnableTestNet bool                        `json:"enableTestNet"`	   // Enable FCH test net
 }
 
-// Added by Fuchsia
+// Added by FCH
 // String implements the stringer interface, returning the consensus engine details.
 func (c *AtmosConfig) String() string {
 	return "atmos"
@@ -365,7 +365,7 @@ func (c *ChainConfig) String() string {
 		engine = c.Ethash
 	case c.Clique != nil:
 		engine = c.Clique
-	// Added by Fuchsia
+	// Added by FCH
 	case c.Atmos != nil:
 		engine = c.Atmos
 	default:

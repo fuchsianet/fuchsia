@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi"
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/accounts/abi"
+	"github.com/fchnetwork/fch/common"
 )
 
 func verify(t *testing.T, jsondata, calldata string, exp []interface{}) {

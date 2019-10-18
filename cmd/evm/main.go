@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fchnetwork/fch/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

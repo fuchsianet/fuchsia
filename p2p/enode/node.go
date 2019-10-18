@@ -27,8 +27,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/p2p/enr"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/p2p/enr"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 var errMissingPrefix = errors.New("missing 'enr:' prefix for base64-encoded record")

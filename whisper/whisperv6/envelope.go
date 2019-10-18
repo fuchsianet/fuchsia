@@ -26,10 +26,10 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/crypto/ecies"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/crypto/ecies"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // Envelope represents a clear-text data packet to transmit through the Whisper

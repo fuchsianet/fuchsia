@@ -21,9 +21,9 @@ package geth
 import (
 	"encoding/json"
 
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/p2p/discv5"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/p2p/discv5"
+	"github.com/fchnetwork/fch/params"
 )
 
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It

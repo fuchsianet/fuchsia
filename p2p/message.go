@@ -25,9 +25,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // Msg defines the structure of a p2p message.

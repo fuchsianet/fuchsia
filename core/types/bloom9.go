@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 type bytesBacked interface {

@@ -23,10 +23,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 func TestLegacyReceiptDecoding(t *testing.T) {

@@ -21,8 +21,8 @@ package geth
 import (
 	"errors"
 
-	ethereum "github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/common"
+	ethereum "github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/common"
 )
 
 // Subscription represents an event subscription where events are

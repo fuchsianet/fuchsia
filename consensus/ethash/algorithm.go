@@ -27,10 +27,10 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/bitutil"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/bitutil"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
 	"golang.org/x/crypto/sha3"
 )
 

@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/eth"
-	"github.com/fuchsianet/fuchsia/eth/downloader"
-	"github.com/fuchsianet/fuchsia/ethclient"
-	"github.com/fuchsianet/fuchsia/ethstats"
-	"github.com/fuchsianet/fuchsia/les"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/discv5"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/nat"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/eth"
+	"github.com/fchnetwork/fch/eth/downloader"
+	"github.com/fchnetwork/fch/ethclient"
+	"github.com/fchnetwork/fch/ethstats"
+	"github.com/fchnetwork/fch/les"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/discv5"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/nat"
+	"github.com/fchnetwork/fch/params"
 	"golang.org/x/net/websocket"
 )
 
@@ -220,7 +220,7 @@ type faucet struct {
 func newFaucet(genesis *core.Genesis, port int, enodes []*discv5.Node, network uint64, stats string, ks *keystore.KeyStore, index []byte) (*faucet, error) {
 	// Assemble the raw devp2p protocol stack
 	stack, err := node.New(&node.Config{
-		Name:    "fuchsia",
+		Name:    "fch",
 		Version: params.VersionWithCommit(gitCommit, gitDate),
 		DataDir: filepath.Join(os.Getenv("HOME"), ".faucet"),
 		P2P: p2p.Config{
@@ -458,7 +458,7 @@ func (f *faucet) apiHandler(conn *websocket.Conn) {
 		case *noauthFlag:
 			username, avatar, address, err = authNoAuth(msg.URL)
 		default:
-			err = errors.New("Something funky happened, please open an issue at https://github.com/fuchsianet/fuchsia/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/fchnetwork/fch/issues")
 		}
 		if err != nil {
 			if err = sendError(conn, err); err != nil {

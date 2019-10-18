@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // Enabled is checked by the constructor functions for all of the

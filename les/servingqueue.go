@@ -21,8 +21,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/common/prque"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/common/prque"
 )
 
 // servingQueue allows running tasks in a limited number of threads and puts the

@@ -19,8 +19,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/common"
 	"gopkg.in/urfave/cli.v1"
 )
 

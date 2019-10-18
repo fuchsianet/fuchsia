@@ -31,7 +31,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/params"
 )
 
 // Command line flags to configure the interpreters.

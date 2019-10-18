@@ -29,12 +29,12 @@ import (
 	"testing/quick"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/ethdb/leveldb"
-	"github.com/fuchsianet/fuchsia/ethdb/memorydb"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/ethdb/leveldb"
+	"github.com/fchnetwork/fch/ethdb/memorydb"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 func init() {

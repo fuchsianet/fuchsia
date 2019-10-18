@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/core/vm"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/core/vm"
 )
 
 // Compiler contains information about the parsed source

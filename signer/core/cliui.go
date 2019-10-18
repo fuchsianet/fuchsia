@@ -24,9 +24,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/internal/ethapi"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/internal/ethapi"
+	"github.com/fchnetwork/fch/log"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

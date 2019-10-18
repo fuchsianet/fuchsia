@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	whisper "github.com/fchnetwork/fch/whisper/whisperv6"
 )
 
 const powRequirement = 0.00001

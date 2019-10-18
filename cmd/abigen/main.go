@@ -23,11 +23,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/common/compiler"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/common/compiler"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

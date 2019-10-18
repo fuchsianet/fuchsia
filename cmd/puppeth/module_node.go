@@ -26,8 +26,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/log"
 )
 
 // nodeDockerfile is the Dockerfile required to run an Ethereum node.

@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 // SampleService is a trivial network service that can be attached to a node for

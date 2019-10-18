@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 var (

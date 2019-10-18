@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // NewTxsEvent is posted when a batch of transactions enter the transaction pool.

@@ -22,7 +22,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 func init() {

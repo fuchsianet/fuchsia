@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // ensureVirtualHost checks whether a reverse-proxy is running on the specified

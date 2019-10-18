@@ -22,7 +22,7 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 func TestPoWCalculationsWithNoLeadingZeros(t *testing.T) {

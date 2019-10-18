@@ -21,10 +21,10 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/fuchsianet/fuchsia/internal/ethapi"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/internal/ethapi"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/rpc"
 	"github.com/graph-gophers/graphql-go"
 	"github.com/graph-gophers/graphql-go/relay"
 )

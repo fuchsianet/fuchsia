@@ -21,10 +21,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fchnetwork/fch/metrics"
 
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p"
 )
 
 const (

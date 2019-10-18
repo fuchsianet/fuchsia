@@ -16,7 +16,7 @@
 
 package downloader
 
-import "github.com/fuchsianet/fuchsia/core/types"
+import "github.com/fchnetwork/fch/core/types"
 
 type DoneEvent struct {
 	Latest *types.Header

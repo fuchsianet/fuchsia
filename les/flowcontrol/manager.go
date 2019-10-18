@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/common/prque"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/common/prque"
 )
 
 // cmNodeFields are ClientNode fields used by the client manager

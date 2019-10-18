@@ -21,15 +21,15 @@ import (
 	"net"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/eth"
-	"github.com/fuchsianet/fuchsia/les/flowcontrol"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/eth"
+	"github.com/fchnetwork/fch/les/flowcontrol"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 const protocolVersion = lpv2

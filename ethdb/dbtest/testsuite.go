@@ -22,7 +22,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/ethdb"
+	"github.com/fchnetwork/fch/ethdb"
 )
 
 // TestDatabaseSuite runs a suite of tests against a KeyValueStore database

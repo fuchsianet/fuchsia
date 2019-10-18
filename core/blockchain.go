@@ -27,21 +27,21 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/common/prque"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/common/prque"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
+	"github.com/fchnetwork/fch/trie"
 	"github.com/hashicorp/golang-lru"
 )
 
@@ -1582,7 +1582,7 @@ func (bc *BlockChain) insertChain(chain types.Blocks, verifySeals bool) (int, []
 			if bc.chainConfig.Clique == nil {
 				logger = log.Warn
 			}
-			// Added by Fuchsia
+			// Added by FCH
 			if bc.chainConfig.Atmos == nil {
 				logger = log.Warn
 			}

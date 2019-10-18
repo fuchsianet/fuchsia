@@ -17,7 +17,7 @@
 package les
 
 import (
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // lesEntry is the "les" ENR entry. This is set for LES servers only.

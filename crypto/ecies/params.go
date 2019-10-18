@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/fuchsianet/fuchsia/crypto"
+	ethcrypto "github.com/fchnetwork/fch/crypto"
 )
 
 var (

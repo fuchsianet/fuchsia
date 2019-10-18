@@ -28,10 +28,10 @@ import (
 	mrand "math/rand"
 	"strconv"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/crypto/ecies"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/crypto/ecies"
+	"github.com/fchnetwork/fch/log"
 )
 
 // MessageParams specifies the exact way a message should be wrapped

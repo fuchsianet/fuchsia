@@ -27,17 +27,17 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
-	"github.com/fuchsianet/fuchsia/tests"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
+	"github.com/fchnetwork/fch/tests"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

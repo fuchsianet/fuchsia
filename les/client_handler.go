@@ -21,14 +21,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/eth/downloader"
-	"github.com/fuchsianet/fuchsia/light"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/eth/downloader"
+	"github.com/fchnetwork/fch/light"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/params"
 )
 
 // clientHandler is responsible for receiving and processing all incoming server

@@ -24,7 +24,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // RLPTest is the JSON structure of a single RLP test.

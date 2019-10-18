@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 func TestUnmarshalJSONNewFilterArgs(t *testing.T) {

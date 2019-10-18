@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/rlp"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/rlp"
+	"github.com/fchnetwork/fch/trie"
 )
 
 // DumpAccount represents an account in the state

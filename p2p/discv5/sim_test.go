@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 // In this test, nodes try to randomly resolve each other.

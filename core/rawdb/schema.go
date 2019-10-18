@@ -20,8 +20,8 @@ package rawdb
 import (
 	"encoding/binary"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/metrics"
 )
 
 // The fields below define the low level database schema prefixing.

@@ -35,7 +35,7 @@ package whisperv6
 import (
 	"time"
 
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // Whisper protocol parameters

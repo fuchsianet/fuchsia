@@ -21,10 +21,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 // errNoActiveJournal is returned if a transaction is attempted to be inserted

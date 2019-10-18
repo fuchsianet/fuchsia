@@ -22,11 +22,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/light"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/light"
+	"github.com/fchnetwork/fch/params"
 )
 
 // Test light syncing which will download all headers from genesis.

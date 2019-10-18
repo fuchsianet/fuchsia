@@ -19,8 +19,8 @@ package leveldb
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/ethdb/dbtest"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/ethdb/dbtest"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/storage"
 )

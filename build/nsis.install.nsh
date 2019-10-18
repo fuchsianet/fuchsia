@@ -1,41 +1,41 @@
-Name "fuchsia ${MAJORVERSION}.${MINORVERSION}.${BUILDVERSION}" # VERSION variables set through command line arguments
+Name "FCH ${MAJORVERSION}.${MINORVERSION}.${BUILDVERSION}" # VERSION variables set through command line arguments
 InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://github.com/fuchsianet/fuchsia/issues"
-!define UPDATEURL "https://github.com/fuchsianet/fuchsia/releases"
-!define ABOUTURL "https://github.com/fuchsianet/fuchsia#ethereum-go"
+!define HELPURL "https://github.com/fchnetwork/fch/issues"
+!define UPDATEURL "https://github.com/fchnetwork/fch/releases"
+!define ABOUTURL "https://github.com/fchnetwork/fch#ethereum-go"
 !define /date NOW "%Y%m%d"
 
 PageEx license
   LicenseData {{.License}}
 PageExEnd
 
-# Install fuchsia binary
+# Install FCH binary
 Section "Geth" GETH_IDX
   SetOutPath $INSTDIR
   file {{.Geth}}
 
   # Create start menu launcher
   createDirectory "$SMPROGRAMS\${APPNAME}"
-  createShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\fuchsia.exe" "--fast" "--cache=512"
-  createShortCut "$SMPROGRAMS\${APPNAME}\Attach.lnk" "$INSTDIR\fuchsia.exe" "attach" "" ""
+  createShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\fch.exe" "--fast" "--cache=512"
+  createShortCut "$SMPROGRAMS\${APPNAME}\Attach.lnk" "$INSTDIR\fch.exe" "attach" "" ""
   createShortCut "$SMPROGRAMS\${APPNAME}\Uninstall.lnk" "$INSTDIR\uninstall.exe" "" "" ""
 
   # Firewall - remove rules (if exists)
-  SimpleFC::AdvRemoveRule "Fuchsia incoming peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Fuchsia outgoing peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Fuchsia UDP discovery (UDP:30303)"
+  SimpleFC::AdvRemoveRule "FCH incoming peers (TCP:30303)"
+  SimpleFC::AdvRemoveRule "FCH outgoing peers (TCP:30303)"
+  SimpleFC::AdvRemoveRule "FCH UDP discovery (UDP:30303)"
 
   # Firewall - add rules
-  SimpleFC::AdvAddRule "Fuchsia incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$INSTDIR\fuchsia.exe" "" "" "Ethereum" 30303 "" "" ""
-  SimpleFC::AdvAddRule "Fuchsia outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$INSTDIR\fuchsia.exe" "" "" "Ethereum" "" 30303 "" ""
-  SimpleFC::AdvAddRule "Fuchsia UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\fuchsia.exe" "" "" "Ethereum" "" 30303 "" ""
+  SimpleFC::AdvAddRule "FCH incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$INSTDIR\fch.exe" "" "" "Ethereum" 30303 "" "" ""
+  SimpleFC::AdvAddRule "FCH outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$INSTDIR\fch.exe" "" "" "Ethereum" "" 30303 "" ""
+  SimpleFC::AdvAddRule "FCH UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\fch.exe" "" "" "Ethereum" "" 30303 "" ""
 
   # Set default IPC endpoint (https://github.com/ethereum/EIPs/issues/147)
-  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\fuchsia.ipc"
-  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\fuchsia.ipc"
+  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\fch.ipc"
+  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\fch.ipc"
 
   # Add instdir to PATH
   Push "$INSTDIR"

@@ -26,7 +26,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 	"github.com/mohae/deepcopy"
 	"github.com/rjeczalik/notify"
 )

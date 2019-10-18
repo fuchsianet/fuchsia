@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/p2p/simulations/pipes"
+	"github.com/fchnetwork/fch/p2p/simulations/pipes"
 )
 
 func TestTCPPipe(t *testing.T) {

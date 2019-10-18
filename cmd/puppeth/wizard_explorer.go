@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // deployExplorer creates a new block explorer based on some user input.

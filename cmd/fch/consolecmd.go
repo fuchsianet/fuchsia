@@ -24,10 +24,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/console"
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/console"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -38,12 +38,12 @@ var (
 		Action:   utils.MigrateFlags(localConsole),
 		Name:     "console",
 		Usage:    "Start an interactive JavaScript environment",
-		Flags:    append(append(append(append(nodeFlags, rpcFlags...), consoleFlags...), whisperFlags...), fuchsiaFlags...),
+		Flags:    append(append(append(append(nodeFlags, rpcFlags...), consoleFlags...), whisperFlags...), fchFlags...),
 		Category: "CONSOLE COMMANDS",
 		Description: `
-The Fuchsia console is an interactive shell for the JavaScript runtime environment
+The FCH console is an interactive shell for the JavaScript runtime environment
 which exposes a node admin interface as well as the Ðapp JavaScript API.
-See https://github.com/fuchsianet/fuchsia/wiki/JavaScript-Console.`,
+See https://github.com/fchnetwork/fch/wiki/JavaScript-Console.`,
 	}
 
 	attachCommand = cli.Command{
@@ -54,10 +54,10 @@ See https://github.com/fuchsianet/fuchsia/wiki/JavaScript-Console.`,
 		Flags:     append(consoleFlags, utils.DataDirFlag),
 		Category:  "CONSOLE COMMANDS",
 		Description: `
-The Fuchsia console is an interactive shell for the JavaScript runtime environment
+The FCH console is an interactive shell for the JavaScript runtime environment
 which exposes a node admin interface as well as the Ðapp JavaScript API.
-See https://github.com/fuchsianet/fuchsia/wiki/JavaScript-Console.
-This command allows to open a console on a running fuchsia node.`,
+See https://github.com/fchnetwork/fch/wiki/JavaScript-Console.
+This command allows to open a console on a running FCH node.`,
 	}
 
 	javascriptCommand = cli.Command{
@@ -69,11 +69,11 @@ This command allows to open a console on a running fuchsia node.`,
 		Category:  "CONSOLE COMMANDS",
 		Description: `
 The JavaScript VM exposes a node admin interface as well as the Ðapp
-JavaScript API. See https://github.com/fuchsianet/fuchsia/wiki/JavaScript-Console`,
+JavaScript API. See https://github.com/fchnetwork/fch/wiki/JavaScript-Console`,
 	}
 )
 
-// localConsole starts a new fuchsia node, attaching a JavaScript console to it at the
+// localConsole starts a new FCH node, attaching a JavaScript console to it at the
 // same time.
 func localConsole(ctx *cli.Context) error {
 	// Create and start the node based on the CLI flags
@@ -85,7 +85,7 @@ func localConsole(ctx *cli.Context) error {
 	// Attach to the newly started node and start the JavaScript console
 	client, err := node.Attach()
 	if err != nil {
-		utils.Fatalf("Failed to attach to the inproc fuchsia: %v", err)
+		utils.Fatalf("Failed to attach to the inproc fch: %v", err)
 	}
 	config := console.Config{
 		DataDir: utils.MakeDataDir(ctx),
@@ -112,10 +112,10 @@ func localConsole(ctx *cli.Context) error {
 	return nil
 }
 
-// remoteConsole will connect to a remote fuchsia instance, attaching a JavaScript
+// remoteConsole will connect to a remote FCH instance, attaching a JavaScript
 // console to it.
 func remoteConsole(ctx *cli.Context) error {
-	// Attach to a remotely running fuchsia instance and start the JavaScript console
+	// Attach to a remotely running FCH instance and start the JavaScript console
 	endpoint := ctx.Args().First()
 	if endpoint == "" {
 		path := node.DefaultDataDir()
@@ -129,11 +129,11 @@ func remoteConsole(ctx *cli.Context) error {
 				path = filepath.Join(path, "rinkeby")
 			}
 		}
-		endpoint = fmt.Sprintf("%s/fuchsia.ipc", path)
+		endpoint = fmt.Sprintf("%s/fch.ipc", path)
 	}
 	client, err := dialRPC(endpoint)
 	if err != nil {
-		utils.Fatalf("Unable to attach to remote fuchsia: %v", err)
+		utils.Fatalf("Unable to attach to remote fch: %v", err)
 	}
 	config := console.Config{
 		DataDir: utils.MakeDataDir(ctx),
@@ -162,7 +162,7 @@ func remoteConsole(ctx *cli.Context) error {
 
 // dialRPC returns a RPC client which connects to the given endpoint.
 // The check for empty endpoint implements the defaulting logic
-// for "fuchsia attach" and "fuchsia monitor" with no argument.
+// for "FCH attach" and "FCH monitor" with no argument.
 func dialRPC(endpoint string) (*rpc.Client, error) {
 	if endpoint == "" {
 		endpoint = node.DefaultIPCEndpoint(clientIdentifier)
@@ -174,7 +174,7 @@ func dialRPC(endpoint string) (*rpc.Client, error) {
 	return rpc.Dial(endpoint)
 }
 
-// ephemeralConsole starts a new fuchsia node, attaches an ephemeral JavaScript
+// ephemeralConsole starts a new FCH node, attaches an ephemeral JavaScript
 // console to it, executes each of the files specified as arguments and tears
 // everything down.
 func ephemeralConsole(ctx *cli.Context) error {
@@ -186,7 +186,7 @@ func ephemeralConsole(ctx *cli.Context) error {
 	// Attach to the newly started node and start the JavaScript console
 	client, err := node.Attach()
 	if err != nil {
-		utils.Fatalf("Failed to attach to the inproc fuchsia: %v", err)
+		utils.Fatalf("Failed to attach to the inproc fch: %v", err)
 	}
 	config := console.Config{
 		DataDir: utils.MakeDataDir(ctx),

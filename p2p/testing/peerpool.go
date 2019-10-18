@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/p2p/enode"
 )
 
 type TestPeer interface {

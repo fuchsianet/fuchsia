@@ -22,7 +22,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 // Strings represents s slice of strs.

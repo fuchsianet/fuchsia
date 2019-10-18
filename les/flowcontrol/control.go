@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/log"
 )
 
 const (

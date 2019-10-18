@@ -19,9 +19,9 @@ package state
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/trie"
 	lru "github.com/hashicorp/golang-lru"
 )
 

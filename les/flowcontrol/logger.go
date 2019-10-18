@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fchnetwork/fch/common/mclock"
 )
 
 // logger collects events in string format and discards events older than the

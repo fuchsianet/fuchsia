@@ -20,7 +20,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/enode"
 )
 
 var (

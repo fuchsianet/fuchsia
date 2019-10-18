@@ -28,9 +28,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/fuchsianet/fuchsia/internal/jsre"
-	"github.com/fuchsianet/fuchsia/internal/web3ext"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/internal/jsre"
+	"github.com/fchnetwork/fch/internal/web3ext"
+	"github.com/fchnetwork/fch/rpc"
 	"github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
 	"github.com/robertkrimen/otto"

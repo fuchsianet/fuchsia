@@ -23,9 +23,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/event"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/event"
+	"github.com/fchnetwork/fch/log"
 	"github.com/karalabe/usb"
 )
 

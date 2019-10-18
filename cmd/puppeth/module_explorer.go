@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // explorerDockerfile is the Dockerfile required to run a block explorer.

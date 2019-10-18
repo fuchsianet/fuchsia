@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/fuchsianet/fuchsia/accounts/abi"
+import "github.com/fchnetwork/fch/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -88,12 +88,12 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/accounts/abi"
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/event"
+	ethereum "github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/accounts/abi"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

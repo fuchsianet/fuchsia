@@ -28,13 +28,13 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/accounts/abi/bind"
-	"github.com/fuchsianet/fuchsia/common"
-	guvnor "github.com/fuchsianet/fuchsia/contracts/atmosGovernance"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/ethclient"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/accounts/abi/bind"
+	"github.com/fchnetwork/fch/common"
+	guvnor "github.com/fchnetwork/fch/contracts/atmosGovernance"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/ethclient"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/params"
 )
 
 func getBootstrapDelegates() ([]common.Address, error) {
@@ -55,7 +55,7 @@ func getBootstrapDelegates() ([]common.Address, error) {
 		fmt.Println(err)
 	}
 	if len(addresses) < params.NewAtmosMinDelegateNo() {
-		log.Error("Failed to save genesis file", "err",  fmt.Sprintf("Not enough Delegates to continue. Only %d found - Contact the fuchsia team to report this issue.", len(addresses) ) )
+		log.Error("Failed to save genesis file", "err",  fmt.Sprintf("Not enough Delegates to continue. Only %d found - Contact the FCH team to report this issue.", len(addresses) ) )
 	}
 	if len(addresses) >= params.NewAtmosMinDelegateNo() {
 		log.Info(fmt.Sprintf("Fantastic! we found %d delegates. you may proceed in generating a genesis.", len(addresses)))
@@ -139,14 +139,14 @@ func (w *wizard) makeGenesis() {
 	}
 
 	fmt.Println("\n\n[aerDEV] ----------------------------------------------------------- [aerDEV]")
-	fmt.Println("[aerDEV] --- We have just preallocated some Fuchsia Coin to hard coded accounts --- [aerDEV]")
+	fmt.Println("[aerDEV] --- We have just preallocated some FCH Coin to hard coded accounts --- [aerDEV]")
 	fmt.Println("[aerDEV] ----------------------------------------------------------- [aerDEV]\n\n")
 
-	for fuchsiaTeamAddress, fuchsiaTeamBalance := range params.NewFuchsiaPreAlloc() {
-		bigaddr, _ := new(big.Int).SetString(fuchsiaTeamAddress, 16)
+	for fchTeamAddress, fchTeamBalance := range params.NewFchPreAlloc() {
+		bigaddr, _ := new(big.Int).SetString(fchTeamAddress, 16)
 		address := common.BigToAddress(bigaddr)
 		bignum := new(big.Int)
-		bignum.SetString(fuchsiaTeamBalance, 10)
+		bignum.SetString(fchTeamBalance, 10)
 		genesis.Alloc[address] = core.GenesisAccount{
 			Balance: bignum,
 		}

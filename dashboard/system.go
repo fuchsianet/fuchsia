@@ -21,8 +21,8 @@ import (
 	"time"
 
 	"github.com/elastic/gosigar"
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/p2p"
 )
 
 // meterCollector returns a function, which retrieves the count of a specific meter.

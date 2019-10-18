@@ -19,10 +19,10 @@ package core
 import (
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/log"
 )
 
 // insertStats tracks and reports on block insertion.

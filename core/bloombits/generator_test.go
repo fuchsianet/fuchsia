@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // Tests that batched bloom bits are correctly rotated from the input bloom

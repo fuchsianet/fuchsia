@@ -29,24 +29,24 @@ import (
 	"time"
 
 	"github.com/elastic/gosigar"
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/console"
-	"github.com/fuchsianet/fuchsia/eth"
-	"github.com/fuchsianet/fuchsia/eth/downloader"
-	"github.com/fuchsianet/fuchsia/ethclient"
-	"github.com/fuchsianet/fuchsia/internal/debug"
-	"github.com/fuchsianet/fuchsia/les"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/node"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/console"
+	"github.com/fchnetwork/fch/eth"
+	"github.com/fchnetwork/fch/eth/downloader"
+	"github.com/fchnetwork/fch/ethclient"
+	"github.com/fchnetwork/fch/internal/debug"
+	"github.com/fchnetwork/fch/les"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/node"
 	cli "gopkg.in/urfave/cli.v1"
 )
 
 const (
-	clientIdentifier = "fuchsia" // Client identifier to advertise over the network
+	clientIdentifier = "fch" // Client identifier to advertise over the network
 )
 
 var (
@@ -193,8 +193,8 @@ var (
 		utils.MetricsInfluxDBTagsFlag,
 	}
 
-	// Added by Fuchsia
-	fuchsiaFlags = []cli.Flag{
+	// Added by FCH
+	fchFlags = []cli.Flag{
 		utils.AtmosEthereumApiEndpointFlag,
 		utils.AtmosGovernance,
 		utils.AtmosTestNet,
@@ -203,7 +203,7 @@ var (
 
 func init() {
 	// Initialize the CLI app and start Geth
-	app.Action = fuchsia
+	app.Action = fch
 	app.HideVersion = true // we have a command to print the version
 	app.Copyright = "Copyright 2013-2019 The go-ethereum Authors"
 	app.Commands = []cli.Command{
@@ -242,8 +242,8 @@ func init() {
 	app.Flags = append(app.Flags, debug.Flags...)
 	app.Flags = append(app.Flags, whisperFlags...)
 	app.Flags = append(app.Flags, metricsFlags...)
-	// Added by Fuchsia
-	app.Flags = append(app.Flags, fuchsiaFlags...)
+	// Added by FCH
+	app.Flags = append(app.Flags, fchFlags...)
 
 	app.Before = func(ctx *cli.Context) error {
 		logdir := ""
@@ -317,7 +317,7 @@ func prepare(ctx *cli.Context) {
 // geth is the main entry point into the system if no special subcommand is ran.
 // It creates a default node based on the command line arguments and runs it in
 // blocking mode, waiting for it to be shut down.
-func fuchsia(ctx *cli.Context) error {
+func fch(ctx *cli.Context) error {
 	if args := ctx.Args(); len(args) > 0 {
 		return fmt.Errorf("invalid command: %q", args[0])
 	}
@@ -333,8 +333,8 @@ func fuchsia(ctx *cli.Context) error {
 // it unlocks any requested accounts, and starts the RPC/IPC interfaces and the
 // miner.
 func startNode(ctx *cli.Context, stack *node.Node) {
-	// Added by Fuchsia
-	log.Info("Starting Fuchsia version")
+	// Added by FCH
+	log.Info("Starting FCH version")
 
 	debug.Memsize.Add("node", stack)
 

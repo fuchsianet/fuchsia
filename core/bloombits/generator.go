@@ -19,7 +19,7 @@ package bloombits
 import (
 	"errors"
 
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 var (

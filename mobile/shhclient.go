@@ -19,8 +19,8 @@
 package geth
 
 import (
-	"github.com/fuchsianet/fuchsia/whisper/shhclient"
-	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
+	"github.com/fchnetwork/fch/whisper/shhclient"
+	whisper "github.com/fchnetwork/fch/whisper/whisperv6"
 )
 
 // WhisperClient provides access to the Ethereum APIs.

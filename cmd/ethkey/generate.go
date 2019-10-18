@@ -23,9 +23,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/crypto"
 	"github.com/pborman/uuid"
 	"gopkg.in/urfave/cli.v1"
 )

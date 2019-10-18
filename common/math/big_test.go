@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 func TestHexOrDecimal256(t *testing.T) {

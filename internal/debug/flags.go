@@ -24,9 +24,9 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/metrics/exp"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/metrics/exp"
 	"github.com/fjl/memsize/memsizeui"
 	colorable "github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"

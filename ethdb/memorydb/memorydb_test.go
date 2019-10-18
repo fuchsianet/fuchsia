@@ -19,8 +19,8 @@ package memorydb
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/ethdb/dbtest"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/ethdb/dbtest"
 )
 
 func TestMemoryDB(t *testing.T) {

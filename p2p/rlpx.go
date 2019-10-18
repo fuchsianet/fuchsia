@@ -35,11 +35,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/bitutil"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/crypto/ecies"
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/common/bitutil"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/crypto/ecies"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/rlp"
 	"github.com/golang/snappy"
 	"golang.org/x/crypto/sha3"
 )

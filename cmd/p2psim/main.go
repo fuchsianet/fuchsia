@@ -45,12 +45,12 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/simulations"
-	"github.com/fuchsianet/fuchsia/p2p/simulations/adapters"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/simulations"
+	"github.com/fchnetwork/fch/p2p/simulations/adapters"
+	"github.com/fchnetwork/fch/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

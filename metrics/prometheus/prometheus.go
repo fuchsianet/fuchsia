@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
 )
 
 // Handler returns an HTTP handler which dump metrics in Prometheus format.

@@ -27,7 +27,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 var (

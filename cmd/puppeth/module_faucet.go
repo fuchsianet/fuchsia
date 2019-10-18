@@ -26,8 +26,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/log"
 )
 
 // faucetDockerfile is the Dockerfile required to build a faucet container to

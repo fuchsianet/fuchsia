@@ -26,7 +26,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/rlp"
+	"github.com/fchnetwork/fch/rlp"
 )
 
 var (

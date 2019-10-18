@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/enode"
 )
 
 func TestMocker(t *testing.T) {

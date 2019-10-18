@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
 )
 
 // calcMemSize64 calculates the required memory size, and returns

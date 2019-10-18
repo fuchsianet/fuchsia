@@ -23,12 +23,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
-	"github.com/fuchsianet/fuchsia/eth"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/les/flowcontrol"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fchnetwork/fch/common/mclock"
+	"github.com/fchnetwork/fch/eth"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/les/flowcontrol"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/metrics"
 )
 
 const makeCostStats = false // make request cost statistics during operation

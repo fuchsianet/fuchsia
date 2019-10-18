@@ -19,8 +19,8 @@ package miner
 import (
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
 )
 
 // noopChainRetriever is an implementation of headerRetriever that always

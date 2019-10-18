@@ -19,8 +19,8 @@ package core
 import (
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/state"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/state"
 )
 
 // txNoncer is a tiny virtual state database to manage the executable nonces of

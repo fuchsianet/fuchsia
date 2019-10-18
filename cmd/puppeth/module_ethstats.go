@@ -25,7 +25,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // ethstatsDockerfile is the Dockerfile required to build an ethstats backend

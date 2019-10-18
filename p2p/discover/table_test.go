@@ -27,10 +27,10 @@ import (
 	"testing/quick"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p/enode"
-	"github.com/fuchsianet/fuchsia/p2p/enr"
-	"github.com/fuchsianet/fuchsia/p2p/netutil"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p/enode"
+	"github.com/fchnetwork/fch/p2p/enr"
+	"github.com/fchnetwork/fch/p2p/netutil"
 )
 
 func TestTable_pingReplace(t *testing.T) {

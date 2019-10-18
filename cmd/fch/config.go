@@ -27,12 +27,12 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/dashboard"
-	"github.com/fuchsianet/fuchsia/eth"
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/params"
-	whisper "github.com/fuchsianet/fuchsia/whisper/whisperv6"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/dashboard"
+	"github.com/fchnetwork/fch/eth"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/params"
+	whisper "github.com/fchnetwork/fch/whisper/whisperv6"
 	"github.com/naoina/toml"
 )
 
@@ -103,7 +103,7 @@ func defaultNodeConfig() node.Config {
 	cfg.Version = params.VersionWithCommit(gitCommit, gitDate)
 	cfg.HTTPModules = append(cfg.HTTPModules, "eth", "shh")
 	cfg.WSModules = append(cfg.WSModules, "eth", "shh")
-	cfg.IPCPath = "fuchsia.ipc"
+	cfg.IPCPath = "fch.ipc"
 	return cfg
 }
 
@@ -136,7 +136,7 @@ func makeConfigNode(ctx *cli.Context) (*node.Node, gethConfig) {
 	utils.SetShhConfig(ctx, stack, &cfg.Shh)
 	utils.SetDashboardConfig(ctx, &cfg.Dashboard)
 
-	// Added by Fuchsia
+	// Added by FCH
 	utils.SetAtmosConfig(ctx, &cfg.Eth)
 
 	return stack, cfg

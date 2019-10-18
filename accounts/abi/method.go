@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // Method represents a callable given a `Name` and whether the method is a constant.

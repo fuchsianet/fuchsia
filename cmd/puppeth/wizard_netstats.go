@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/log"
 	"github.com/olekukonko/tablewriter"
 )
 

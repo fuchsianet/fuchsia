@@ -23,11 +23,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/ethdb/leveldb"
-	"github.com/fuchsianet/fuchsia/ethdb/memorydb"
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/ethdb/leveldb"
+	"github.com/fchnetwork/fch/ethdb/memorydb"
+	"github.com/fchnetwork/fch/log"
 	"github.com/olekukonko/tablewriter"
 )
 
@@ -242,7 +242,7 @@ func InspectDatabase(db ethdb.Database) error {
 		txlookupSize    common.StorageSize
 		preimageSize    common.StorageSize
 		bloomBitsSize   common.StorageSize
-		// Added by Fuchsia
+		// Added by FCH
 		cliqueSnapsSize common.StorageSize
 		atmosSnapsSize common.StorageSize
 
@@ -289,7 +289,7 @@ func InspectDatabase(db ethdb.Database) error {
 			bloomBitsSize += size
 		case bytes.HasPrefix(key, []byte("clique-")) && len(key) == 7+common.HashLength:
 			cliqueSnapsSize += size
-		// Added by Fuchsia
+		// Added by FCH
 		case bytes.HasPrefix(key, []byte("atmos-")) && len(key) == 7+common.HashLength:
 			atmosSnapsSize += size
 		case bytes.HasPrefix(key, []byte("cht-")) && len(key) == 4+common.HashLength:
@@ -338,7 +338,7 @@ func InspectDatabase(db ethdb.Database) error {
 		{"Key-Value store", "Trie nodes", trieSize.String()},
 		{"Key-Value store", "Trie preimages", preimageSize.String()},
 		{"Key-Value store", "Clique snapshots", cliqueSnapsSize.String()},
-		// Added by Fuchsia
+		// Added by FCH
 		{"Key-Value store", "Atmos snapshots", atmosSnapsSize.String()},
 		{"Key-Value store", "Singleton metadata", metadata.String()},
 		{"Ancient store", "Headers", ancientHeaders.String()},

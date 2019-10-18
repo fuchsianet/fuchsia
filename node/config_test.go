@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/p2p"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured
@@ -85,15 +85,15 @@ func TestIPCPathResolution(t *testing.T) {
 	}{
 		{"", "", false, ""},
 		{"data", "", false, ""},
-		{"", "fuchsia.ipc", false, filepath.Join(os.TempDir(), "fuchsia.ipc")},
-		{"data", "fuchsia.ipc", false, "data/fuchsia.ipc"},
-		{"data", "./fuchsia.ipc", false, "./fuchsia.ipc"},
-		{"data", "/fuchsia.ipc", false, "/fuchsia.ipc"},
+		{"", "fch.ipc", false, filepath.Join(os.TempDir(), "fch.ipc")},
+		{"data", "fch.ipc", false, "data/fch.ipc"},
+		{"data", "./fch.ipc", false, "./fch.ipc"},
+		{"data", "/fch.ipc", false, "/fch.ipc"},
 		{"", "", true, ``},
 		{"data", "", true, ``},
-		{"", "fuchsia.ipc", true, `\\.\pipe\fuchsia.ipc`},
-		{"data", "fuchsia.ipc", true, `\\.\pipe\fuchsia.ipc`},
-		{"data", `\\.\pipe\fuchsia.ipc`, true, `\\.\pipe\fuchsia.ipc`},
+		{"", "fch.ipc", true, `\\.\pipe\fch.ipc`},
+		{"data", "fch.ipc", true, `\\.\pipe\fch.ipc`},
+		{"data", `\\.\pipe\fch.ipc`, true, `\\.\pipe\fch.ipc`},
 	}
 	for i, test := range tests {
 		// Only run when platform/test match

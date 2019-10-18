@@ -19,7 +19,7 @@ package les
 import (
 	"errors"
 
-	"github.com/fuchsianet/fuchsia/common/hexutil"
+	"github.com/fchnetwork/fch/common/hexutil"
 )
 
 var (

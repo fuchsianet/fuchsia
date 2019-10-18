@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/metrics"
+	"github.com/fchnetwork/fch/metrics"
 )
 
 // a regexp for extracting the unit from time.Duration.String

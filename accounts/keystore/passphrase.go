@@ -38,10 +38,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/crypto"
 	"github.com/pborman/uuid"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/crypto/scrypt"
@@ -121,7 +121,7 @@ func (ks keyStorePassphrase) StoreKey(filename string, key *Key, auth string) er
 				"This indicates that the keystore is corrupted. \n" +
 				"The corrupted file is stored at \n%v\n" +
 				"Please file a ticket at:\n\n" +
-				"https://github.com/fuchsianet/fuchsia/issues." +
+				"https://github.com/fchnetwork/fch/issues." +
 				"The error was : %s"
 			return fmt.Errorf(msg, tmpName, err)
 		}

@@ -23,8 +23,8 @@ import (
 	"crypto/elliptic"
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/crypto/secp256k1"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/crypto/secp256k1"
 )
 
 // Ecrecover returns the uncompressed public key that created the given signature.

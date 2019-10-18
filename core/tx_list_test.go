@@ -20,8 +20,8 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // Tests that transactions can be added to strict lists and list contents and

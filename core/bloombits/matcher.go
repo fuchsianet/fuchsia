@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/bitutil"
-	"github.com/fuchsianet/fuchsia/crypto"
+	"github.com/fchnetwork/fch/common/bitutil"
+	"github.com/fchnetwork/fch/crypto"
 )
 
 // bloomIndexes represents the bit indexes inside the bloom filter that belong

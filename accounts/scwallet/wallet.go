@@ -33,12 +33,12 @@ import (
 	"sync"
 	"time"
 
-	ethereum "github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/accounts"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/log"
+	ethereum "github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/accounts"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/log"
 	pcsc "github.com/gballet/go-libpcsclite"
 	"github.com/status-im/keycard-go/derivationpath"
 )

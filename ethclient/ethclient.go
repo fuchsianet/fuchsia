@@ -24,12 +24,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/rlp"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/rlp"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.

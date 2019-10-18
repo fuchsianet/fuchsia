@@ -22,8 +22,8 @@ package node
 import (
 	"reflect"
 
-	"github.com/fuchsianet/fuchsia/p2p"
-	"github.com/fuchsianet/fuchsia/rpc"
+	"github.com/fchnetwork/fch/p2p"
+	"github.com/fchnetwork/fch/rpc"
 )
 
 // NoopService is a trivial implementation of the Service interface.

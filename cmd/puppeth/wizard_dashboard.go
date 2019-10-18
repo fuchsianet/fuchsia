@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/fuchsianet/fuchsia/log"
+	"github.com/fchnetwork/fch/log"
 )
 
 // deployDashboard queries the user for various input on deploying a web-service

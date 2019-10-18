@@ -26,26 +26,26 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/cmd/utils"
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/hexutil"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/consensus"
-	"github.com/fuchsianet/fuchsia/consensus/ethash"
-	"github.com/fuchsianet/fuchsia/consensus/misc"
-	"github.com/fuchsianet/fuchsia/core"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/core/state"
-	"github.com/fuchsianet/fuchsia/core/types"
-	"github.com/fuchsianet/fuchsia/core/vm"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/ethdb"
-	"github.com/fuchsianet/fuchsia/log"
-	"github.com/fuchsianet/fuchsia/node"
-	"github.com/fuchsianet/fuchsia/params"
-	"github.com/fuchsianet/fuchsia/rlp"
-	"github.com/fuchsianet/fuchsia/rpc"
-	"github.com/fuchsianet/fuchsia/trie"
+	"github.com/fchnetwork/fch/cmd/utils"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/hexutil"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/consensus"
+	"github.com/fchnetwork/fch/consensus/ethash"
+	"github.com/fchnetwork/fch/consensus/misc"
+	"github.com/fchnetwork/fch/core"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/core/state"
+	"github.com/fchnetwork/fch/core/types"
+	"github.com/fchnetwork/fch/core/vm"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/ethdb"
+	"github.com/fchnetwork/fch/log"
+	"github.com/fchnetwork/fch/node"
+	"github.com/fchnetwork/fch/params"
+	"github.com/fchnetwork/fch/rlp"
+	"github.com/fchnetwork/fch/rpc"
+	"github.com/fchnetwork/fch/trie"
 
 	cli "gopkg.in/urfave/cli.v1"
 )
@@ -59,11 +59,11 @@ var (
 	retestethCommand = cli.Command{
 		Action:      utils.MigrateFlags(retesteth),
 		Name:        "retesteth",
-		Usage:       "Launches fuchsia in retesteth mode",
+		Usage:       "Launches FCH in retesteth mode",
 		ArgsUsage:   "",
 		Flags:       []cli.Flag{rpcPortFlag},
 		Category:    "MISCELLANEOUS COMMANDS",
-		Description: `Launches fuchsia in retesteth mode (no database, no network, only retesteth RPC interface)`,
+		Description: `Launches FCH in retesteth mode (no database, no network, only retesteth RPC interface)`,
 	}
 )
 
@@ -822,7 +822,7 @@ func (api *RetestethAPI) StorageRangeAt(ctx context.Context,
 }
 
 func (api *RetestethAPI) ClientVersion(ctx context.Context) (string, error) {
-	return "Fuchsia-" + params.VersionWithCommit(gitCommit, gitDate), nil
+	return "FCH-" + params.VersionWithCommit(gitCommit, gitDate), nil
 }
 
 // splitAndTrim splits input separated by a comma

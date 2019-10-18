@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 )
 
 // The ABI holds information about a contract's context and available

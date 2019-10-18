@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/fuchsianet/fuchsia/metrics"
-	"github.com/fuchsianet/fuchsia/metrics/prometheus"
+	"github.com/fchnetwork/fch/metrics"
+	"github.com/fchnetwork/fch/metrics/prometheus"
 )
 
 type exp struct {

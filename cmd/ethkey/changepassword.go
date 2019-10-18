@@ -21,8 +21,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/fuchsianet/fuchsia/accounts/keystore"
-	"github.com/fuchsianet/fuchsia/cmd/utils"
+	"github.com/fchnetwork/fch/accounts/keystore"
+	"github.com/fchnetwork/fch/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

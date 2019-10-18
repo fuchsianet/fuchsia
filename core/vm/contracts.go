@@ -22,12 +22,12 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/common/math"
-	"github.com/fuchsianet/fuchsia/crypto"
-	"github.com/fuchsianet/fuchsia/crypto/blake2b"
-	"github.com/fuchsianet/fuchsia/crypto/bn256"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/common/math"
+	"github.com/fchnetwork/fch/crypto"
+	"github.com/fchnetwork/fch/crypto/blake2b"
+	"github.com/fchnetwork/fch/crypto/bn256"
+	"github.com/fchnetwork/fch/params"
 	"golang.org/x/crypto/ripemd160"
 )
 

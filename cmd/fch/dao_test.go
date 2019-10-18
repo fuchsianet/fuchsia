@@ -23,9 +23,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/core/rawdb"
-	"github.com/fuchsianet/fuchsia/params"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/core/rawdb"
+	"github.com/fchnetwork/fch/params"
 )
 
 // Genesis block for nodes which don't care about the DAO fork (i.e. not configured)
@@ -119,7 +119,7 @@ func testDAOForkBlockNewChain(t *testing.T, test int, genesis string, expectBloc
 		geth.WaitExit()
 	}
 	// Retrieve the DAO config flag from the database
-	path := filepath.Join(datadir, "fuchsia", "chaindata")
+	path := filepath.Join(datadir, "fch", "chaindata")
 	db, err := rawdb.NewLevelDBDatabase(path, 0, 0, "")
 	if err != nil {
 		t.Fatalf("test %d: failed to open test database: %v", test, err)

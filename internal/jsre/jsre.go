@@ -26,8 +26,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common"
-	"github.com/fuchsianet/fuchsia/internal/jsre/deps"
+	"github.com/fchnetwork/fch/common"
+	"github.com/fchnetwork/fch/internal/jsre/deps"
 	"github.com/robertkrimen/otto"
 )
 

@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fuchsianet/fuchsia/common/mclock"
+	"github.com/fchnetwork/fch/common/mclock"
 )
 
 type testNode struct {

@@ -1,11 +1,11 @@
 package params
 
 import (
-	"github.com/fuchsianet/fuchsia/common"
+	"github.com/fchnetwork/fch/common"
 	"math/big"
 )
 
-// Values for Fuchsia Genesis related to ATMOS Consensus
+// Values for FCH Genesis related to ATMOS Consensus
 var (
 	atmosMinDelegateNo           = 3
 	atmosNetID                   = 538
@@ -59,7 +59,7 @@ func NewAtmosBlockRewards() *big.Int {
 	return atmosBlockRewards
 }
 
-func NewFuchsiaPreAlloc() map[string]string {
-	fuchsiaPreAlloc := map[string]string{}
-	return fuchsiaPreAlloc
+func NewFchPreAlloc() map[string]string {
+	fchPreAlloc := map[string]string{}
+	return fchPreAlloc
 }
