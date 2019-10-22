@@ -56,7 +56,7 @@ sudo apt install dnsutils
 #!/bin/bash
 printf "\n============================> FCH Start script for MAINNET local Gateway <====================================\n\n" 
 IP="$(dig +short myip.opendns.com @resolver1.opendns.com)" 
-FCH --datadir=/your/datadir\
+fch --datadir=/your/datadir\
     --atmos.ethereum.endpoint "https://mainnet.infura.io"\
     --txpool.releaselimit "3000" \
     --targetgaslimit "21000000" \
@@ -82,7 +82,7 @@ FCH --datadir=/your/datadir\
 #!/bin/bash
 printf "\n============================> FCH Start script for TESTNET local Gateway <====================================\n\n" 
 IP="$(dig +short myip.opendns.com @resolver1.opendns.com)" 
-FCH --datadir=/your/datadir\
+fch --datadir=/your/datadir\
     --atmos.ethereum.endpoint "https://rinkeby.infura.io"\
     --txpool.releaselimit "3000" \
     --targetgaslimit "21000000" \
