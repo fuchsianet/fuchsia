@@ -9,12 +9,13 @@ import (
 var (
 	atmosMinDelegateNo           = 3
 	atmosNetID                   = 538
-	atmosGovernanceAddress       = "0x7f07f6627e9bf1fc821360e0c20f32af532df106"
+	atmosGovernanceAddress       = "0x8293b99BDca4D72525602EF3Ff7F5D1306E8Fa50"
 	atmosTestGovernanceAddress   = "0x02c362540efc9FA5592621C9212D0bF776732050"
 	atmosBlockInterval           = uint64(3)
 	atmosEpochInterval           = uint64(100)
 	atmosGasLimit                = uint64(126000000)
-	atmosEthereumRPCProvider     = "https://mainnet.infura.io"
+	// TODO: This is for initial launch we need to switch to mainnet later
+	atmosEthereumRPCProvider     = "https://rinkeby.infura.io"
 	atmosTestEthereumRPCProvider = "https://rinkeby.infura.io"
 	atmosBlockRewards            = new(big.Int).Mul(big.NewInt(888),big.NewInt(1e+18))
 )
