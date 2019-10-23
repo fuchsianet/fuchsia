@@ -9,7 +9,7 @@ import (
 var (
 	atmosMinDelegateNo           = 3
 	atmosNetID                   = 538
-	atmosGovernanceAddress       = "0x8293b99BDca4D72525602EF3Ff7F5D1306E8Fa50"
+	atmosGovernanceAddress       = "0x073b2D2Cf8D31be73BDb0109dA05dA8C85BEa279"
 	atmosTestGovernanceAddress   = "0x02c362540efc9FA5592621C9212D0bF776732050"
 	atmosBlockInterval           = uint64(3)
 	atmosEpochInterval           = uint64(100)
