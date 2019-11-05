@@ -9,15 +9,14 @@ import (
 var (
 	atmosMinDelegateNo           = 3
 	atmosNetID                   = 538
-	atmosGovernanceAddress       = "0x073b2D2Cf8D31be73BDb0109dA05dA8C85BEa279"
-	atmosTestGovernanceAddress   = "0x02c362540efc9FA5592621C9212D0bF776732050"
+	atmosGovernanceAddress       = "0xe2b151d2eF8d7D3058E44b6481B06F71d38253c9"
+	atmosTestGovernanceAddress   = "0x073b2D2Cf8D31be73BDb0109dA05dA8C85BEa279"
 	atmosBlockInterval           = uint64(3)
 	atmosEpochInterval           = uint64(100)
 	atmosGasLimit                = uint64(126000000)
-	// TODO: This is for initial launch we need to switch to mainnet later
-	atmosEthereumRPCProvider     = "https://rinkeby.infura.io"
+	atmosEthereumRPCProvider     = "https://mainnet.infura.io"
 	atmosTestEthereumRPCProvider = "https://rinkeby.infura.io"
-	atmosBlockRewards            = new(big.Int).Mul(big.NewInt(888),big.NewInt(1e+18))
+	atmosBlockRewards            = big.NewInt(1e+18)
 )
 
 func NewAtmosMinDelegateNo() int {
