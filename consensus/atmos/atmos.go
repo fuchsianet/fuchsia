@@ -921,7 +921,7 @@ func getEthereumApiEndpoint(config *params.AtmosConfig) string {
 
 // Added by FCH
 func getGovernanceAddress(config *params.AtmosConfig) common.Address {
-	if config.EthereumApiEndpoint != "" {
+	if config.GovernanceAddress != (common.Address{}) {
 		return config.GovernanceAddress
 	}
 	if config.EnableTestNet {

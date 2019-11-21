@@ -7,8 +7,8 @@ import (
 
 // Values for FCH Genesis related to ATMOS Consensus
 var (
-	atmosMinDelegateNo           = 3
-	atmosNetID                   = 538
+	atmosMinDelegateNo           = 1
+	atmosNetID                   = 4040
 	atmosGovernanceAddress       = "0xe2b151d2eF8d7D3058E44b6481B06F71d38253c9"
 	atmosTestGovernanceAddress   = "0x073b2D2Cf8D31be73BDb0109dA05dA8C85BEa279"
 	atmosBlockInterval           = uint64(3)
