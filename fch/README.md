@@ -1,1 +1,1 @@
-FCH node implementation
+FCH.Network development directory
