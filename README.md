@@ -39,7 +39,7 @@ For optimal performance the FCH Engineering team recommend running your nodes wi
 5. Initialise the genesis using the following command: 
     * ```fch --datadir /your/datadir init genesis.json```
     * (Optional) If you wish to create an account at this stage you can also do that using ```fch --datadir /your/datadir account new```  and typing your password when prompted
-    * (Optional) FCH's infrastructure team also recommend another step which greatly helps P2P discovery of your node, place a file inside of the --datadir directory within the folder called ```/your/datadir/fch``` and call it called ```static-nodes.json``` which can be found [here](https://github.com/fchnetwork/fch/tree/master/fch/static-nodes.json) (Coming soon..)\ 
+    * (Optional) FCH's infrastructure team also recommend another step which greatly helps P2P discovery of your node, place a file inside of the --datadir directory within the folder called ```/your/datadir/fch``` and call it called ```static-nodes.json``` which can be found [here](https://github.com/fchnetwork/fch/tree/master/fch/static-nodes.json)\ 
 6. The next step we will provide you with a startup script that will start a standard FCH node which can be used as a gateway with which you can connect to locally.
     * (Optional) Another tip from the FCH Engineering team it is important to specify the correct external IP of your machine, to simplify this install the ```dig``` command line utility and use our script below it will automatically populate your external IP for you and vastly help with P2P Discovery.
 
