@@ -33,7 +33,7 @@ For optimal performance the FCH Engineering team recommend running your nodes wi
 2. Clone this repository
     * then ```cd``` into it
     * Run ```make all``` this will create all the FCH binaries necessary to run FCH within the ```./build/bin``` folder
-    * It will be necessary to also add this path to your operating systems ```$PATH``` variable.
+    * **It will be necessary** to also add this path to your operating systems ```$PATH``` variable.
 3. Next create a folder somewhere on your os and name it appropriately - it will be your data directory holding all the chains data including keystores for whatever accounts you generate. It will be used during genesis creation with the ```--datadir``` flag
 4. Next up you will need to get the [genesis file](https://github.com/fchnetwork/fch/tree/master/fch/genesis.json).
 5. Initialise the genesis using the following command: 
@@ -75,6 +75,20 @@ fch --datadir=/your/datadir\
     --nousb\
     console
 ```
+
+### Delegate setup
+
+To setup delegate you will need to do next:
+1. You should have minimum 10M XF for masternode and 100M XF for validator
+2. Set allowance for `0xe2b151d2eF8d7D3058E44b6481B06F71d38253c9` address for amount of tokens you would like to bond into delegate
+3. Execute next methods on governance contract `0xe2b151d2eF8d7D3058E44b6481B06F71d38253c9` [Governance ABI](https://github.com/fchnetwork/fch/tree/master/fch//abi/governance.json)
+    1. `createDelegate` create new delegate. You will have to specify next:
+        1. delegate name - can't be changed
+        2. signer address - coinbase address of FCH.Network node which will be used for mining
+        3. amount of tokens to bond (approved before)
+    2. `getAllDelegatesAddresses()` - the last delegate return is your delegate address. You will need it for next step
+4. On delegate contract created above (with address obtained) call `launch()` method to start delegate [Delegate ABI](https://github.com/fchnetwork/fch/tree/master/fch//abi/delegate.json).
+5. Start node and enable mining there with `mining.start()`. Your delegate will start mining in 20 minutes from launch.
 
 ## License
 
