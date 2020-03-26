@@ -80,7 +80,7 @@ To setup delegate you will need to do next:
         3. amount of tokens to bond (approved before)
     2. `getAllDelegatesAddresses()` - the last delegate return is your delegate address. You will need it for next step
 4. On delegate contract created above (with address obtained) call `launch()` method to start delegate [Delegate ABI](https://github.com/fchnetwork/fch/tree/master/fch//abi/delegate.json).
-5. Start node and enable mining there with `mining.start()`. Your delegate will start mining in 20 minutes from launch.
+5. Start node and enable mining there with `miner.start()`. Your delegate will start mining in 20 minutes from launch.
 
 ## License
 
