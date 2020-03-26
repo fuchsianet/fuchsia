@@ -52,22 +52,14 @@ sudo apt install dnsutils
 ### Example bash script to start a local node connected to the FCH.Network Mainnet
 ```
 #!/bin/bash
-printf "\n============================> FCH Start script for MAINNET local Gateway <====================================\n\n" 
+printf "\n============================> FCH Start script for MAINNET node <====================================\n\n" 
 IP="$(dig +short myip.opendns.com @resolver1.opendns.com)" 
 fch --datadir=/your/datadir\
     --atmos.ethereum.endpoint "https://ethereum.fch.network"\
     --txpool.releaselimit "3000" \
     --miner.gastarget="126000000"\
     --gasprice "1000000000"\
-    --ws\
-    --wsaddr="0.0.0.0"\
-    --wsapi db,eth,debug,net,txpool,web3\
-    --wsorigins "*"\
-    --rpc\
-    --rpcapi db,eth,debug,net,txpool,web3\
-    --rpcaddr "0.0.0.0"\
-    --rpcvhosts "*"\
-    --rpccorsdomain "*"\
+    --ethstats="Your Name:ryttc6sg9n6w6xuj@stats.fch.network/api"\
     --cache="2048"\
     --syncmode 'full' \
     --networkid "4040"\
