@@ -59,7 +59,7 @@ fch --datadir=/your/datadir\
     --txpool.releaselimit "3000" \
     --miner.gastarget="126000000"\
     --gasprice "1000000000"\
-    --ethstats="Your Name:ryttc6sg9n6w6xuj@stats.fch.network/api"\
+    --ethstats="Your Name::RYTTC6sG9N6W6xuJ@stats.fch.network/api"\
     --cache="2048"\
     --syncmode 'full' \
     --networkid "4040"\
